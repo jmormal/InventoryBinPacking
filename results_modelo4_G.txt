@@ -1,0 +1,197 @@
+
+ The instance is planning days 10 and folder  Escenario1 
+
+Objective value:  15.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  180.54070615768433
+
+ The instance is planning days 10 and folder  Escenario1 
+
+Objective value:  15.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  180.53477025032043
+
+ The instance is planning days 10 and folder  Escenario1 
+
+Objective value:  15.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  120.46460771560669
+
+ The instance is planning days 10 and folder  Escenario1 
+
+Objective value:  15.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  120.44594192504883
+
+ The instance is planning days 10 and folder  Escenario1 
+
+Objective value:  15.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  240.51912450790405
+
+ The instance is planning days 10 and folder  Escenario2 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario3 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario2 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario3 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario1 
+
+Objective value:  18.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  240.67854976654053
+
+ The instance is planning days 10 and folder  Escenario2 
+
+
+ The instance is planning days 10 and folder  Escenario1 
+
+
+ The instance is planning days 10 and folder  Escenario1 
+
+Objective value:  15.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  240.36953496932983
+
+ The instance is planning days 10 and folder  Escenario2 
+
+
+ The instance is planning days 10 and folder  Escenario1 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario2 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario3 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario1 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario2 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario3 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario1 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario2 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario3 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario1 
+
+Objective value:  15.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  240.53814697265625
+
+ The instance is planning days 10 and folder  Escenario2 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario1 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario2 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario3 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario1 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario2 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario3 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario1 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario2 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario3 
+
+No solution found
+Time: 240
+
+ The instance is planning days 10 and folder  Escenario1 
+
+
+ The instance is planning days 10 and folder  Escenario2 
+
+Objective value:  23.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  7201.357561349869
+
+ The instance is planning days 10 and folder  Escenario3 
+
+Objective value:  32.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  7201.069606781006

@@ -1,0 +1,1323 @@
+26 Set Declarations
+    B : Set of types of containers (b =1,…,B)
+        Size=1, Index=None, Ordered=Insertion
+        Key  : Dimen : Domain : Size : Members
+        None :     1 :    Any :    2 : {'a', 'b'}
+    D_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     2 :    I*T :   25 : {(1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (4, 1), (4, 2), (4, 3), (4, 4), (4, 5), (5, 1), (5, 2), (5, 3), (5, 4), (5, 5)}
+    F : Set of possible rows inside a truck (f =1,2,...,F)
+        Size=1, Index=None, Ordered=Insertion
+        Key  : Dimen : Domain : Size : Members
+        None :     1 :    Any :    3 : {0, 1, 2}
+    I : Set of products (i =1, 2,…,I)
+        Size=1, Index=None, Ordered=Insertion
+        Key  : Dimen : Domain : Size : Members
+        None :     1 :    Any :    5 : {1, 2, 3, 4, 5}
+    I2_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     2 :    I*T :   25 : {(1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (4, 1), (4, 2), (4, 3), (4, 4), (4, 5), (5, 1), (5, 2), (5, 3), (5, 4), (5, 5)}
+    I_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     2 :    I*T :   25 : {(1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (4, 1), (4, 2), (4, 3), (4, 4), (4, 5), (5, 1), (5, 2), (5, 3), (5, 4), (5, 5)}
+    K : Set of trucks (k =1, 2,…,K)
+        Size=1, Index=None, Ordered=Insertion
+        Key  : Dimen : Domain : Size : Members
+        None :     1 :    Any :    3 : {0, 1, 2}
+    L : Set of containers such that they have the width w
+        Size=1, Index=W, Ordered=Insertion
+        Key  : Dimen : Domain : Size : Members
+        1200 :     1 :    Any :    2 : {'a', 'b'}
+    M_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain    : Size : Members
+        None :     5 : I*K*T*B*F :  450 : {(1, 0, 1, 'a', 0), (1, 0, 1, 'a', 1), (1, 0, 1, 'a', 2), (1, 0, 1, 'b', 0), (1, 0, 1, 'b', 1), (1, 0, 1, 'b', 2), (1, 0, 2, 'a', 0), (1, 0, 2, 'a', 1), (1, 0, 2, 'a', 2), (1, 0, 2, 'b', 0), (1, 0, 2, 'b', 1), (1, 0, 2, 'b', 2), (1, 0, 3, 'a', 0), (1, 0, 3, 'a', 1), (1, 0, 3, 'a', 2), (1, 0, 3, 'b', 0), (1, 0, 3, 'b', 1), (1, 0, 3, 'b', 2), (1, 0, 4, 'a', 0), (1, 0, 4, 'a', 1), (1, 0, 4, 'a', 2), (1, 0, 4, 'b', 0), (1, 0, 4, 'b', 1), (1, 0, 4, 'b', 2), (1, 0, 5, 'a', 0), (1, 0, 5, 'a', 1), (1, 0, 5, 'a', 2), (1, 0, 5, 'b', 0), (1, 0, 5, 'b', 1), (1, 0, 5, 'b', 2), (1, 1, 1, 'a', 0), (1, 1, 1, 'a', 1), (1, 1, 1, 'a', 2), (1, 1, 1, 'b', 0), (1, 1, 1, 'b', 1), (1, 1, 1, 'b', 2), (1, 1, 2, 'a', 0), (1, 1, 2, 'a', 1), (1, 1, 2, 'a', 2), (1, 1, 2, 'b', 0), (1, 1, 2, 'b', 1), (1, 1, 2, 'b', 2), (1, 1, 3, 'a', 0), (1, 1, 3, 'a', 1), (1, 1, 3, 'a', 2), (1, 1, 3, 'b', 0), (1, 1, 3, 'b', 1), (1, 1, 3, 'b', 2), (1, 1, 4, 'a', 0), (1, 1, 4, 'a', 1), (1, 1, 4, 'a', 2), (1, 1, 4, 'b', 0), (1, 1, 4, 'b', 1), (1, 1, 4, 'b', 2), (1, 1, 5, 'a', 0), (1, 1, 5, 'a', 1), (1, 1, 5, 'a', 2), (1, 1, 5, 'b', 0), (1, 1, 5, 'b', 1), (1, 1, 5, 'b', 2), (1, 2, 1, 'a', 0), (1, 2, 1, 'a', 1), (1, 2, 1, 'a', 2), (1, 2, 1, 'b', 0), (1, 2, 1, 'b', 1), (1, 2, 1, 'b', 2), (1, 2, 2, 'a', 0), (1, 2, 2, 'a', 1), (1, 2, 2, 'a', 2), (1, 2, 2, 'b', 0), (1, 2, 2, 'b', 1), (1, 2, 2, 'b', 2), (1, 2, 3, 'a', 0), (1, 2, 3, 'a', 1), (1, 2, 3, 'a', 2), (1, 2, 3, 'b', 0), (1, 2, 3, 'b', 1), (1, 2, 3, 'b', 2), (1, 2, 4, 'a', 0), (1, 2, 4, 'a', 1), (1, 2, 4, 'a', 2), (1, 2, 4, 'b', 0), (1, 2, 4, 'b', 1), (1, 2, 4, 'b', 2), (1, 2, 5, 'a', 0), (1, 2, 5, 'a', 1), (1, 2, 5, 'a', 2), (1, 2, 5, 'b', 0), (1, 2, 5, 'b', 1), (1, 2, 5, 'b', 2), (2, 0, 1, 'a', 0), (2, 0, 1, 'a', 1), (2, 0, 1, 'a', 2), (2, 0, 1, 'b', 0), (2, 0, 1, 'b', 1), (2, 0, 1, 'b', 2), (2, 0, 2, 'a', 0), (2, 0, 2, 'a', 1), (2, 0, 2, 'a', 2), (2, 0, 2, 'b', 0), (2, 0, 2, 'b', 1), (2, 0, 2, 'b', 2), (2, 0, 3, 'a', 0), (2, 0, 3, 'a', 1), (2, 0, 3, 'a', 2), (2, 0, 3, 'b', 0), (2, 0, 3, 'b', 1), (2, 0, 3, 'b', 2), (2, 0, 4, 'a', 0), (2, 0, 4, 'a', 1), (2, 0, 4, 'a', 2), (2, 0, 4, 'b', 0), (2, 0, 4, 'b', 1), (2, 0, 4, 'b', 2), (2, 0, 5, 'a', 0), (2, 0, 5, 'a', 1), (2, 0, 5, 'a', 2), (2, 0, 5, 'b', 0), (2, 0, 5, 'b', 1), (2, 0, 5, 'b', 2), (2, 1, 1, 'a', 0), (2, 1, 1, 'a', 1), (2, 1, 1, 'a', 2), (2, 1, 1, 'b', 0), (2, 1, 1, 'b', 1), (2, 1, 1, 'b', 2), (2, 1, 2, 'a', 0), (2, 1, 2, 'a', 1), (2, 1, 2, 'a', 2), (2, 1, 2, 'b', 0), (2, 1, 2, 'b', 1), (2, 1, 2, 'b', 2), (2, 1, 3, 'a', 0), (2, 1, 3, 'a', 1), (2, 1, 3, 'a', 2), (2, 1, 3, 'b', 0), (2, 1, 3, 'b', 1), (2, 1, 3, 'b', 2), (2, 1, 4, 'a', 0), (2, 1, 4, 'a', 1), (2, 1, 4, 'a', 2), (2, 1, 4, 'b', 0), (2, 1, 4, 'b', 1), (2, 1, 4, 'b', 2), (2, 1, 5, 'a', 0), (2, 1, 5, 'a', 1), (2, 1, 5, 'a', 2), (2, 1, 5, 'b', 0), (2, 1, 5, 'b', 1), (2, 1, 5, 'b', 2), (2, 2, 1, 'a', 0), (2, 2, 1, 'a', 1), (2, 2, 1, 'a', 2), (2, 2, 1, 'b', 0), (2, 2, 1, 'b', 1), (2, 2, 1, 'b', 2), (2, 2, 2, 'a', 0), (2, 2, 2, 'a', 1), (2, 2, 2, 'a', 2), (2, 2, 2, 'b', 0), (2, 2, 2, 'b', 1), (2, 2, 2, 'b', 2), (2, 2, 3, 'a', 0), (2, 2, 3, 'a', 1), (2, 2, 3, 'a', 2), (2, 2, 3, 'b', 0), (2, 2, 3, 'b', 1), (2, 2, 3, 'b', 2), (2, 2, 4, 'a', 0), (2, 2, 4, 'a', 1), (2, 2, 4, 'a', 2), (2, 2, 4, 'b', 0), (2, 2, 4, 'b', 1), (2, 2, 4, 'b', 2), (2, 2, 5, 'a', 0), (2, 2, 5, 'a', 1), (2, 2, 5, 'a', 2), (2, 2, 5, 'b', 0), (2, 2, 5, 'b', 1), (2, 2, 5, 'b', 2), (3, 0, 1, 'a', 0), (3, 0, 1, 'a', 1), (3, 0, 1, 'a', 2), (3, 0, 1, 'b', 0), (3, 0, 1, 'b', 1), (3, 0, 1, 'b', 2), (3, 0, 2, 'a', 0), (3, 0, 2, 'a', 1), (3, 0, 2, 'a', 2), (3, 0, 2, 'b', 0), (3, 0, 2, 'b', 1), (3, 0, 2, 'b', 2), (3, 0, 3, 'a', 0), (3, 0, 3, 'a', 1), (3, 0, 3, 'a', 2), (3, 0, 3, 'b', 0), (3, 0, 3, 'b', 1), (3, 0, 3, 'b', 2), (3, 0, 4, 'a', 0), (3, 0, 4, 'a', 1), (3, 0, 4, 'a', 2), (3, 0, 4, 'b', 0), (3, 0, 4, 'b', 1), (3, 0, 4, 'b', 2), (3, 0, 5, 'a', 0), (3, 0, 5, 'a', 1), (3, 0, 5, 'a', 2), (3, 0, 5, 'b', 0), (3, 0, 5, 'b', 1), (3, 0, 5, 'b', 2), (3, 1, 1, 'a', 0), (3, 1, 1, 'a', 1), (3, 1, 1, 'a', 2), (3, 1, 1, 'b', 0), (3, 1, 1, 'b', 1), (3, 1, 1, 'b', 2), (3, 1, 2, 'a', 0), (3, 1, 2, 'a', 1), (3, 1, 2, 'a', 2), (3, 1, 2, 'b', 0), (3, 1, 2, 'b', 1), (3, 1, 2, 'b', 2), (3, 1, 3, 'a', 0), (3, 1, 3, 'a', 1), (3, 1, 3, 'a', 2), (3, 1, 3, 'b', 0), (3, 1, 3, 'b', 1), (3, 1, 3, 'b', 2), (3, 1, 4, 'a', 0), (3, 1, 4, 'a', 1), (3, 1, 4, 'a', 2), (3, 1, 4, 'b', 0), (3, 1, 4, 'b', 1), (3, 1, 4, 'b', 2), (3, 1, 5, 'a', 0), (3, 1, 5, 'a', 1), (3, 1, 5, 'a', 2), (3, 1, 5, 'b', 0), (3, 1, 5, 'b', 1), (3, 1, 5, 'b', 2), (3, 2, 1, 'a', 0), (3, 2, 1, 'a', 1), (3, 2, 1, 'a', 2), (3, 2, 1, 'b', 0), (3, 2, 1, 'b', 1), (3, 2, 1, 'b', 2), (3, 2, 2, 'a', 0), (3, 2, 2, 'a', 1), (3, 2, 2, 'a', 2), (3, 2, 2, 'b', 0), (3, 2, 2, 'b', 1), (3, 2, 2, 'b', 2), (3, 2, 3, 'a', 0), (3, 2, 3, 'a', 1), (3, 2, 3, 'a', 2), (3, 2, 3, 'b', 0), (3, 2, 3, 'b', 1), (3, 2, 3, 'b', 2), (3, 2, 4, 'a', 0), (3, 2, 4, 'a', 1), (3, 2, 4, 'a', 2), (3, 2, 4, 'b', 0), (3, 2, 4, 'b', 1), (3, 2, 4, 'b', 2), (3, 2, 5, 'a', 0), (3, 2, 5, 'a', 1), (3, 2, 5, 'a', 2), (3, 2, 5, 'b', 0), (3, 2, 5, 'b', 1), (3, 2, 5, 'b', 2), (4, 0, 1, 'a', 0), (4, 0, 1, 'a', 1), (4, 0, 1, 'a', 2), (4, 0, 1, 'b', 0), (4, 0, 1, 'b', 1), (4, 0, 1, 'b', 2), (4, 0, 2, 'a', 0), (4, 0, 2, 'a', 1), (4, 0, 2, 'a', 2), (4, 0, 2, 'b', 0), (4, 0, 2, 'b', 1), (4, 0, 2, 'b', 2), (4, 0, 3, 'a', 0), (4, 0, 3, 'a', 1), (4, 0, 3, 'a', 2), (4, 0, 3, 'b', 0), (4, 0, 3, 'b', 1), (4, 0, 3, 'b', 2), (4, 0, 4, 'a', 0), (4, 0, 4, 'a', 1), (4, 0, 4, 'a', 2), (4, 0, 4, 'b', 0), (4, 0, 4, 'b', 1), (4, 0, 4, 'b', 2), (4, 0, 5, 'a', 0), (4, 0, 5, 'a', 1), (4, 0, 5, 'a', 2), (4, 0, 5, 'b', 0), (4, 0, 5, 'b', 1), (4, 0, 5, 'b', 2), (4, 1, 1, 'a', 0), (4, 1, 1, 'a', 1), (4, 1, 1, 'a', 2), (4, 1, 1, 'b', 0), (4, 1, 1, 'b', 1), (4, 1, 1, 'b', 2), (4, 1, 2, 'a', 0), (4, 1, 2, 'a', 1), (4, 1, 2, 'a', 2), (4, 1, 2, 'b', 0), (4, 1, 2, 'b', 1), (4, 1, 2, 'b', 2), (4, 1, 3, 'a', 0), (4, 1, 3, 'a', 1), (4, 1, 3, 'a', 2), (4, 1, 3, 'b', 0), (4, 1, 3, 'b', 1), (4, 1, 3, 'b', 2), (4, 1, 4, 'a', 0), (4, 1, 4, 'a', 1), (4, 1, 4, 'a', 2), (4, 1, 4, 'b', 0), (4, 1, 4, 'b', 1), (4, 1, 4, 'b', 2), (4, 1, 5, 'a', 0), (4, 1, 5, 'a', 1), (4, 1, 5, 'a', 2), (4, 1, 5, 'b', 0), (4, 1, 5, 'b', 1), (4, 1, 5, 'b', 2), (4, 2, 1, 'a', 0), (4, 2, 1, 'a', 1), (4, 2, 1, 'a', 2), (4, 2, 1, 'b', 0), (4, 2, 1, 'b', 1), (4, 2, 1, 'b', 2), (4, 2, 2, 'a', 0), (4, 2, 2, 'a', 1), (4, 2, 2, 'a', 2), (4, 2, 2, 'b', 0), (4, 2, 2, 'b', 1), (4, 2, 2, 'b', 2), (4, 2, 3, 'a', 0), (4, 2, 3, 'a', 1), (4, 2, 3, 'a', 2), (4, 2, 3, 'b', 0), (4, 2, 3, 'b', 1), (4, 2, 3, 'b', 2), (4, 2, 4, 'a', 0), (4, 2, 4, 'a', 1), (4, 2, 4, 'a', 2), (4, 2, 4, 'b', 0), (4, 2, 4, 'b', 1), (4, 2, 4, 'b', 2), (4, 2, 5, 'a', 0), (4, 2, 5, 'a', 1), (4, 2, 5, 'a', 2), (4, 2, 5, 'b', 0), (4, 2, 5, 'b', 1), (4, 2, 5, 'b', 2), (5, 0, 1, 'a', 0), (5, 0, 1, 'a', 1), (5, 0, 1, 'a', 2), (5, 0, 1, 'b', 0), (5, 0, 1, 'b', 1), (5, 0, 1, 'b', 2), (5, 0, 2, 'a', 0), (5, 0, 2, 'a', 1), (5, 0, 2, 'a', 2), (5, 0, 2, 'b', 0), (5, 0, 2, 'b', 1), (5, 0, 2, 'b', 2), (5, 0, 3, 'a', 0), (5, 0, 3, 'a', 1), (5, 0, 3, 'a', 2), (5, 0, 3, 'b', 0), (5, 0, 3, 'b', 1), (5, 0, 3, 'b', 2), (5, 0, 4, 'a', 0), (5, 0, 4, 'a', 1), (5, 0, 4, 'a', 2), (5, 0, 4, 'b', 0), (5, 0, 4, 'b', 1), (5, 0, 4, 'b', 2), (5, 0, 5, 'a', 0), (5, 0, 5, 'a', 1), (5, 0, 5, 'a', 2), (5, 0, 5, 'b', 0), (5, 0, 5, 'b', 1), (5, 0, 5, 'b', 2), (5, 1, 1, 'a', 0), (5, 1, 1, 'a', 1), (5, 1, 1, 'a', 2), (5, 1, 1, 'b', 0), (5, 1, 1, 'b', 1), (5, 1, 1, 'b', 2), (5, 1, 2, 'a', 0), (5, 1, 2, 'a', 1), (5, 1, 2, 'a', 2), (5, 1, 2, 'b', 0), (5, 1, 2, 'b', 1), (5, 1, 2, 'b', 2), (5, 1, 3, 'a', 0), (5, 1, 3, 'a', 1), (5, 1, 3, 'a', 2), (5, 1, 3, 'b', 0), (5, 1, 3, 'b', 1), (5, 1, 3, 'b', 2), (5, 1, 4, 'a', 0), (5, 1, 4, 'a', 1), (5, 1, 4, 'a', 2), (5, 1, 4, 'b', 0), (5, 1, 4, 'b', 1), (5, 1, 4, 'b', 2), (5, 1, 5, 'a', 0), (5, 1, 5, 'a', 1), (5, 1, 5, 'a', 2), (5, 1, 5, 'b', 0), (5, 1, 5, 'b', 1), (5, 1, 5, 'b', 2), (5, 2, 1, 'a', 0), (5, 2, 1, 'a', 1), (5, 2, 1, 'a', 2), (5, 2, 1, 'b', 0), (5, 2, 1, 'b', 1), (5, 2, 1, 'b', 2), (5, 2, 2, 'a', 0), (5, 2, 2, 'a', 1), (5, 2, 2, 'a', 2), (5, 2, 2, 'b', 0), (5, 2, 2, 'b', 1), (5, 2, 2, 'b', 2), (5, 2, 3, 'a', 0), (5, 2, 3, 'a', 1), (5, 2, 3, 'a', 2), (5, 2, 3, 'b', 0), (5, 2, 3, 'b', 1), (5, 2, 3, 'b', 2), (5, 2, 4, 'a', 0), (5, 2, 4, 'a', 1), (5, 2, 4, 'a', 2), (5, 2, 4, 'b', 0), (5, 2, 4, 'b', 1), (5, 2, 4, 'b', 2), (5, 2, 5, 'a', 0), (5, 2, 5, 'a', 1), (5, 2, 5, 'a', 2), (5, 2, 5, 'b', 0), (5, 2, 5, 'b', 1), (5, 2, 5, 'b', 2)}
+    M_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain  : Size : Members
+        None :     4 : B*K*T*F :   90 : {('a', 0, 1, 0), ('a', 0, 1, 1), ('a', 0, 1, 2), ('a', 0, 2, 0), ('a', 0, 2, 1), ('a', 0, 2, 2), ('a', 0, 3, 0), ('a', 0, 3, 1), ('a', 0, 3, 2), ('a', 0, 4, 0), ('a', 0, 4, 1), ('a', 0, 4, 2), ('a', 0, 5, 0), ('a', 0, 5, 1), ('a', 0, 5, 2), ('a', 1, 1, 0), ('a', 1, 1, 1), ('a', 1, 1, 2), ('a', 1, 2, 0), ('a', 1, 2, 1), ('a', 1, 2, 2), ('a', 1, 3, 0), ('a', 1, 3, 1), ('a', 1, 3, 2), ('a', 1, 4, 0), ('a', 1, 4, 1), ('a', 1, 4, 2), ('a', 1, 5, 0), ('a', 1, 5, 1), ('a', 1, 5, 2), ('a', 2, 1, 0), ('a', 2, 1, 1), ('a', 2, 1, 2), ('a', 2, 2, 0), ('a', 2, 2, 1), ('a', 2, 2, 2), ('a', 2, 3, 0), ('a', 2, 3, 1), ('a', 2, 3, 2), ('a', 2, 4, 0), ('a', 2, 4, 1), ('a', 2, 4, 2), ('a', 2, 5, 0), ('a', 2, 5, 1), ('a', 2, 5, 2), ('b', 0, 1, 0), ('b', 0, 1, 1), ('b', 0, 1, 2), ('b', 0, 2, 0), ('b', 0, 2, 1), ('b', 0, 2, 2), ('b', 0, 3, 0), ('b', 0, 3, 1), ('b', 0, 3, 2), ('b', 0, 4, 0), ('b', 0, 4, 1), ('b', 0, 4, 2), ('b', 0, 5, 0), ('b', 0, 5, 1), ('b', 0, 5, 2), ('b', 1, 1, 0), ('b', 1, 1, 1), ('b', 1, 1, 2), ('b', 1, 2, 0), ('b', 1, 2, 1), ('b', 1, 2, 2), ('b', 1, 3, 0), ('b', 1, 3, 1), ('b', 1, 3, 2), ('b', 1, 4, 0), ('b', 1, 4, 1), ('b', 1, 4, 2), ('b', 1, 5, 0), ('b', 1, 5, 1), ('b', 1, 5, 2), ('b', 2, 1, 0), ('b', 2, 1, 1), ('b', 2, 1, 2), ('b', 2, 2, 0), ('b', 2, 2, 1), ('b', 2, 2, 2), ('b', 2, 3, 0), ('b', 2, 3, 1), ('b', 2, 3, 2), ('b', 2, 4, 0), ('b', 2, 4, 1), ('b', 2, 4, 2), ('b', 2, 5, 0), ('b', 2, 5, 1), ('b', 2, 5, 2)}
+    Q_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     3 :  I*K*T :   75 : {(1, 0, 1), (1, 0, 2), (1, 0, 3), (1, 0, 4), (1, 0, 5), (1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 1, 5), (1, 2, 1), (1, 2, 2), (1, 2, 3), (1, 2, 4), (1, 2, 5), (2, 0, 1), (2, 0, 2), (2, 0, 3), (2, 0, 4), (2, 0, 5), (2, 1, 1), (2, 1, 2), (2, 1, 3), (2, 1, 4), (2, 1, 5), (2, 2, 1), (2, 2, 2), (2, 2, 3), (2, 2, 4), (2, 2, 5), (3, 0, 1), (3, 0, 2), (3, 0, 3), (3, 0, 4), (3, 0, 5), (3, 1, 1), (3, 1, 2), (3, 1, 3), (3, 1, 4), (3, 1, 5), (3, 2, 1), (3, 2, 2), (3, 2, 3), (3, 2, 4), (3, 2, 5), (4, 0, 1), (4, 0, 2), (4, 0, 3), (4, 0, 4), (4, 0, 5), (4, 1, 1), (4, 1, 2), (4, 1, 3), (4, 1, 4), (4, 1, 5), (4, 2, 1), (4, 2, 2), (4, 2, 3), (4, 2, 4), (4, 2, 5), (5, 0, 1), (5, 0, 2), (5, 0, 3), (5, 0, 4), (5, 0, 5), (5, 1, 1), (5, 1, 2), (5, 1, 3), (5, 1, 4), (5, 1, 5), (5, 2, 1), (5, 2, 2), (5, 2, 3), (5, 2, 4), (5, 2, 5)}
+    Q_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     3 :  I*K*T :   75 : {(1, 0, 1), (1, 0, 2), (1, 0, 3), (1, 0, 4), (1, 0, 5), (1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 1, 5), (1, 2, 1), (1, 2, 2), (1, 2, 3), (1, 2, 4), (1, 2, 5), (2, 0, 1), (2, 0, 2), (2, 0, 3), (2, 0, 4), (2, 0, 5), (2, 1, 1), (2, 1, 2), (2, 1, 3), (2, 1, 4), (2, 1, 5), (2, 2, 1), (2, 2, 2), (2, 2, 3), (2, 2, 4), (2, 2, 5), (3, 0, 1), (3, 0, 2), (3, 0, 3), (3, 0, 4), (3, 0, 5), (3, 1, 1), (3, 1, 2), (3, 1, 3), (3, 1, 4), (3, 1, 5), (3, 2, 1), (3, 2, 2), (3, 2, 3), (3, 2, 4), (3, 2, 5), (4, 0, 1), (4, 0, 2), (4, 0, 3), (4, 0, 4), (4, 0, 5), (4, 1, 1), (4, 1, 2), (4, 1, 3), (4, 1, 4), (4, 1, 5), (4, 2, 1), (4, 2, 2), (4, 2, 3), (4, 2, 4), (4, 2, 5), (5, 0, 1), (5, 0, 2), (5, 0, 3), (5, 0, 4), (5, 0, 5), (5, 1, 1), (5, 1, 2), (5, 1, 3), (5, 1, 4), (5, 1, 5), (5, 2, 1), (5, 2, 2), (5, 2, 3), (5, 2, 4), (5, 2, 5)}
+    T : Set of planning periods (t =1, 2…T)
+        Size=1, Index=None, Ordered=Insertion
+        Key  : Dimen : Domain : Size : Members
+        None :     1 :    Any :    5 : {1, 2, 3, 4, 5}
+    V_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain  : Size : Members
+        None :     4 : K*B*F*T :   90 : {(0, 'a', 0, 1), (0, 'a', 0, 2), (0, 'a', 0, 3), (0, 'a', 0, 4), (0, 'a', 0, 5), (0, 'a', 1, 1), (0, 'a', 1, 2), (0, 'a', 1, 3), (0, 'a', 1, 4), (0, 'a', 1, 5), (0, 'a', 2, 1), (0, 'a', 2, 2), (0, 'a', 2, 3), (0, 'a', 2, 4), (0, 'a', 2, 5), (0, 'b', 0, 1), (0, 'b', 0, 2), (0, 'b', 0, 3), (0, 'b', 0, 4), (0, 'b', 0, 5), (0, 'b', 1, 1), (0, 'b', 1, 2), (0, 'b', 1, 3), (0, 'b', 1, 4), (0, 'b', 1, 5), (0, 'b', 2, 1), (0, 'b', 2, 2), (0, 'b', 2, 3), (0, 'b', 2, 4), (0, 'b', 2, 5), (1, 'a', 0, 1), (1, 'a', 0, 2), (1, 'a', 0, 3), (1, 'a', 0, 4), (1, 'a', 0, 5), (1, 'a', 1, 1), (1, 'a', 1, 2), (1, 'a', 1, 3), (1, 'a', 1, 4), (1, 'a', 1, 5), (1, 'a', 2, 1), (1, 'a', 2, 2), (1, 'a', 2, 3), (1, 'a', 2, 4), (1, 'a', 2, 5), (1, 'b', 0, 1), (1, 'b', 0, 2), (1, 'b', 0, 3), (1, 'b', 0, 4), (1, 'b', 0, 5), (1, 'b', 1, 1), (1, 'b', 1, 2), (1, 'b', 1, 3), (1, 'b', 1, 4), (1, 'b', 1, 5), (1, 'b', 2, 1), (1, 'b', 2, 2), (1, 'b', 2, 3), (1, 'b', 2, 4), (1, 'b', 2, 5), (2, 'a', 0, 1), (2, 'a', 0, 2), (2, 'a', 0, 3), (2, 'a', 0, 4), (2, 'a', 0, 5), (2, 'a', 1, 1), (2, 'a', 1, 2), (2, 'a', 1, 3), (2, 'a', 1, 4), (2, 'a', 1, 5), (2, 'a', 2, 1), (2, 'a', 2, 2), (2, 'a', 2, 3), (2, 'a', 2, 4), (2, 'a', 2, 5), (2, 'b', 0, 1), (2, 'b', 0, 2), (2, 'b', 0, 3), (2, 'b', 0, 4), (2, 'b', 0, 5), (2, 'b', 1, 1), (2, 'b', 1, 2), (2, 'b', 1, 3), (2, 'b', 1, 4), (2, 'b', 1, 5), (2, 'b', 2, 1), (2, 'b', 2, 2), (2, 'b', 2, 3), (2, 'b', 2, 4), (2, 'b', 2, 5)}
+    V_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     3 :  K*T*F :   45 : {(0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 2, 0), (0, 2, 1), (0, 2, 2), (0, 3, 0), (0, 3, 1), (0, 3, 2), (0, 4, 0), (0, 4, 1), (0, 4, 2), (0, 5, 0), (0, 5, 1), (0, 5, 2), (1, 1, 0), (1, 1, 1), (1, 1, 2), (1, 2, 0), (1, 2, 1), (1, 2, 2), (1, 3, 0), (1, 3, 1), (1, 3, 2), (1, 4, 0), (1, 4, 1), (1, 4, 2), (1, 5, 0), (1, 5, 1), (1, 5, 2), (2, 1, 0), (2, 1, 1), (2, 1, 2), (2, 2, 0), (2, 2, 1), (2, 2, 2), (2, 3, 0), (2, 3, 1), (2, 3, 2), (2, 4, 0), (2, 4, 1), (2, 4, 2), (2, 5, 0), (2, 5, 1), (2, 5, 2)}
+    W : Set of possible box widths (w =1, 2,…,W)
+        Size=1, Index=None, Ordered=Insertion
+        Key  : Dimen : Domain : Size : Members
+        None :     1 :    Any :    1 : {1200,}
+    X2_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     3 :  K*F*T :   45 : {(0, 0, 1), (0, 0, 2), (0, 0, 3), (0, 0, 4), (0, 0, 5), (0, 1, 1), (0, 1, 2), (0, 1, 3), (0, 1, 4), (0, 1, 5), (0, 2, 1), (0, 2, 2), (0, 2, 3), (0, 2, 4), (0, 2, 5), (1, 0, 1), (1, 0, 2), (1, 0, 3), (1, 0, 4), (1, 0, 5), (1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 1, 5), (1, 2, 1), (1, 2, 2), (1, 2, 3), (1, 2, 4), (1, 2, 5), (2, 0, 1), (2, 0, 2), (2, 0, 3), (2, 0, 4), (2, 0, 5), (2, 1, 1), (2, 1, 2), (2, 1, 3), (2, 1, 4), (2, 1, 5), (2, 2, 1), (2, 2, 2), (2, 2, 3), (2, 2, 4), (2, 2, 5)}
+    X3_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     2 :    K*T :   15 : {(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5)}
+    X4_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     3 :  K*F*T :   45 : {(0, 0, 1), (0, 0, 2), (0, 0, 3), (0, 0, 4), (0, 0, 5), (0, 1, 1), (0, 1, 2), (0, 1, 3), (0, 1, 4), (0, 1, 5), (0, 2, 1), (0, 2, 2), (0, 2, 3), (0, 2, 4), (0, 2, 5), (1, 0, 1), (1, 0, 2), (1, 0, 3), (1, 0, 4), (1, 0, 5), (1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 1, 5), (1, 2, 1), (1, 2, 2), (1, 2, 3), (1, 2, 4), (1, 2, 5), (2, 0, 1), (2, 0, 2), (2, 0, 3), (2, 0, 4), (2, 0, 5), (2, 1, 1), (2, 1, 2), (2, 1, 3), (2, 1, 4), (2, 1, 5), (2, 2, 1), (2, 2, 2), (2, 2, 3), (2, 2, 4), (2, 2, 5)}
+    X_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain  : Size : Members
+        None :     4 : K*F*W*T :   45 : {(0, 0, 1200, 1), (0, 0, 1200, 2), (0, 0, 1200, 3), (0, 0, 1200, 4), (0, 0, 1200, 5), (0, 1, 1200, 1), (0, 1, 1200, 2), (0, 1, 1200, 3), (0, 1, 1200, 4), (0, 1, 1200, 5), (0, 2, 1200, 1), (0, 2, 1200, 2), (0, 2, 1200, 3), (0, 2, 1200, 4), (0, 2, 1200, 5), (1, 0, 1200, 1), (1, 0, 1200, 2), (1, 0, 1200, 3), (1, 0, 1200, 4), (1, 0, 1200, 5), (1, 1, 1200, 1), (1, 1, 1200, 2), (1, 1, 1200, 3), (1, 1, 1200, 4), (1, 1, 1200, 5), (1, 2, 1200, 1), (1, 2, 1200, 2), (1, 2, 1200, 3), (1, 2, 1200, 4), (1, 2, 1200, 5), (2, 0, 1200, 1), (2, 0, 1200, 2), (2, 0, 1200, 3), (2, 0, 1200, 4), (2, 0, 1200, 5), (2, 1, 1200, 1), (2, 1, 1200, 2), (2, 1, 1200, 3), (2, 1, 1200, 4), (2, 1, 1200, 5), (2, 2, 1200, 1), (2, 2, 1200, 2), (2, 2, 1200, 3), (2, 2, 1200, 4), (2, 2, 1200, 5)}
+    X_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain  : Size : Members
+        None :     4 : K*F*W*T :   45 : {(0, 0, 1200, 1), (0, 0, 1200, 2), (0, 0, 1200, 3), (0, 0, 1200, 4), (0, 0, 1200, 5), (0, 1, 1200, 1), (0, 1, 1200, 2), (0, 1, 1200, 3), (0, 1, 1200, 4), (0, 1, 1200, 5), (0, 2, 1200, 1), (0, 2, 1200, 2), (0, 2, 1200, 3), (0, 2, 1200, 4), (0, 2, 1200, 5), (1, 0, 1200, 1), (1, 0, 1200, 2), (1, 0, 1200, 3), (1, 0, 1200, 4), (1, 0, 1200, 5), (1, 1, 1200, 1), (1, 1, 1200, 2), (1, 1, 1200, 3), (1, 1, 1200, 4), (1, 1, 1200, 5), (1, 2, 1200, 1), (1, 2, 1200, 2), (1, 2, 1200, 3), (1, 2, 1200, 4), (1, 2, 1200, 5), (2, 0, 1200, 1), (2, 0, 1200, 2), (2, 0, 1200, 3), (2, 0, 1200, 4), (2, 0, 1200, 5), (2, 1, 1200, 1), (2, 1, 1200, 2), (2, 1, 1200, 3), (2, 1, 1200, 4), (2, 1, 1200, 5), (2, 2, 1200, 1), (2, 2, 1200, 2), (2, 2, 1200, 3), (2, 2, 1200, 4), (2, 2, 1200, 5)}
+    Y2_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     2 :    K*T :   15 : {(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5)}
+    Y_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     2 :    K*T :   15 : {(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5)}
+    Y_rule_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     2 :    K*T :   15 : {(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5)}
+    u_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     2 :    I*B :   10 : {(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b'), (3, 'a'), (3, 'b'), (4, 'a'), (4, 'b'), (5, 'a'), (5, 'b')}
+    vI_index : Size=1, Index=None, Ordered=True
+        Key  : Dimen : Domain : Size : Members
+        None :     2 :    I*T :   25 : {(1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (4, 1), (4, 2), (4, 3), (4, 4), (4, 5), (5, 1), (5, 2), (5, 3), (5, 4), (5, 5)}
+
+5 Param Declarations
+    CosteStock : Coste de almacenar un producto
+        Size=5, Index=I, Domain=Any, Default=None, Mutable=False
+        Key : Value
+          1 :     1
+          2 :     1
+          3 :     1
+          4 :     1
+          5 :     1
+    D : Demand of product i in t
+        Size=25, Index=D_index, Domain=Any, Default=None, Mutable=False
+        Key    : Value
+        (1, 1) :   617
+        (1, 2) :   612
+        (1, 3) :   601
+        (1, 4) :   601
+        (1, 5) :   649
+        (2, 1) :   653
+        (2, 2) :   602
+        (2, 3) :   636
+        (2, 4) :   646
+        (2, 5) :   638
+        (3, 1) :   389
+        (3, 2) :   379
+        (3, 3) :   391
+        (3, 4) :   393
+        (3, 5) :   369
+        (4, 1) :   258
+        (4, 2) :   261
+        (4, 3) :   260
+        (4, 4) :   249
+        (4, 5) :   254
+        (5, 1) :   140
+        (5, 2) :   138
+        (5, 3) :   141
+        (5, 4) :   145
+        (5, 5) :   140
+    SC : Number of days of stock coverage for product i
+        Size=5, Index=I, Domain=Any, Default=None, Mutable=False
+        Key : Value
+          1 :     3
+          2 :     3
+          3 :     3
+          4 :     3
+          5 :     3
+    stockInicial : Stock inicial de cada producto
+        Size=5, Index=I, Domain=Any, Default=None, Mutable=False
+        Key : Value
+          1 :  1882
+          2 :  1881
+          3 :  1133
+          4 :   748
+          5 :   434
+    u : Amount of product i that fits in a container b
+        Size=10, Index=u_index, Domain=Any, Default=0, Mutable=False
+        Key      : Value
+        (1, 'a') :  30.0
+        (1, 'b') :  30.0
+        (2, 'a') :  30.0
+        (2, 'b') :  30.0
+        (3, 'a') :  15.0
+        (3, 'b') :  30.0
+        (4, 'a') :  15.0
+        (4, 'b') :  30.0
+        (5, 'a') :  12.0
+
+6 Var Declarations
+    M : Units transported of i with the type of container b by k in time period t
+        Size=450, Index=M_index
+        Key               : Lower : Value : Upper : Fixed : Stale : Domain
+        (1, 0, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 1, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 1, 'b', 0) :     0 :  32.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 3, 'b', 0) :     0 :  14.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 3, 'b', 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 5, 'b', 0) :     0 :  22.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 1, 'a', 1) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 1, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 3, 'b', 0) :     0 :  26.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 4, 'a', 0) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 1, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 1, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 3, 'a', 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 3, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 4, 'b', 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 5, 'a', 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 5, 'b', 0) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 1, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 1, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 2, 'a', 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 3, 'a', 0) :     0 :  10.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 3, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 4, 'a', 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 5, 'a', 1) :     0 :  22.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 1, 'a', 0) :     0 :   4.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 1, 'a', 1) :     0 :  10.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 1, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 2, 'a', 0) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 2, 'a', 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 3, 'a', 1) :     0 :  32.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 3, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 4, 'b', 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 5, 'b', 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 1, 'a', 1) :     0 :  32.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 1, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 3, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 1, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 1, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 2, 'b', 0) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 3, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 3, 'b', 1) :     0 :  32.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 5, 'b', 0) :     0 :   1.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 1, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 1, 'b', 0) :     0 :  27.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 3, 'b', 0) :     0 :   6.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 1, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 1, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 3, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 1, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 1, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 3, 'b', 0) :     0 :   6.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 5, 'b', 0) :     0 :   1.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 5, 'b', 1) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 1, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 1, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 3, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 1, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 1, 'b', 0) :     0 :  29.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 2, 'b', 0) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 2, 'b', 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 3, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 1, 'a', 1) :     0 :  32.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 1, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 3, 'a', 0) :     0 :   2.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 3, 'b', 0) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 4, 'a', 0) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 5, 'a', 0) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 5, 'a', 1) :     0 :   2.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 1, 'a', 1) :     0 :  14.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 1, 'b', 0) :     0 :   1.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 3, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 5, 'a', 0) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 1, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 1, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 1, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 1, 'b', 0) :     0 :   3.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 1, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 1, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 2, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 2, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 2, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 2, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 2, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 2, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 3, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 3, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 3, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 3, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 3, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 3, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 4, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 4, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 4, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 4, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 4, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 4, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 5, 'a', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 5, 'a', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 5, 'a', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 5, 'b', 0) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 5, 'b', 1) :     0 :  -0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 5, 'b', 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+    Q : Units transported of i by k in period t
+        Size=75, Index=Q_index
+        Key       : Lower : Value : Upper : Fixed : Stale : Domain
+        (1, 0, 1) :     0 : 960.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 3) :     0 : 420.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 0, 5) :     0 : 660.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 1) :     0 : 240.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 3) :     0 : 780.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 1, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 3) :     0 : 300.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 0, 5) :     0 : 660.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 1) :     0 : 420.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 3) :     0 : 960.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 1, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 1) :     0 : 960.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 3) :     0 : 960.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 0, 5) :     0 :  30.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 1) :     0 : 810.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 3) :     0 : 180.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 1, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (3, 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 3) :     0 : 180.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 0, 5) :     0 : 270.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 1, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 1) :     0 : 870.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (4, 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 1) :     0 : 384.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 3) :     0 :  24.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 0, 5) :     0 : 120.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 1) :     0 : 168.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 1, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (5, 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+    V : Number of containers of type b that are on the bottom layer at the column c of k
+        Size=90, Index=V_index
+        Key            : Lower : Value : Upper : Fixed : Stale : Domain
+        (0, 'a', 0, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 0, 3) :     0 :   3.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 0, 5) :     0 :   2.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 1, 1) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 1, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 1, 5) :     0 :   6.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 2, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'a', 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 0, 1) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 0, 3) :     0 :   5.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 0, 5) :     0 :   6.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 1, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 1, 3) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 1, 5) :     0 :   2.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 2, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (0, 'b', 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 0, 1) :     0 :   1.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 0, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 0, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 1, 1) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 1, 3) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 1, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 2, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'a', 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 0, 1) :     0 :   7.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 0, 3) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 0, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 1, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 1, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 1, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 2, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (1, 'b', 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 0, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 0, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 0, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 1, 1) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 1, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 1, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 2, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'a', 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 0, 1) :     0 :   8.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 0, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 0, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 0, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 0, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 1, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 1, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 1, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 1, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 1, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 2, 1) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 2, 2) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 2, 3) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 2, 4) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+        (2, 'b', 2, 5) :     0 :   0.0 :  None : False : False : NonNegativeIntegers
+    X : Binary variable indicating whether the row f of the truck k is carrying containers of width w at time t
+        Size=45, Index=X_index
+        Key             : Lower : Value : Upper : Fixed : Stale : Domain
+        (0, 0, 1200, 1) :     0 :   1.0 :     1 : False : False : Binary
+        (0, 0, 1200, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (0, 0, 1200, 3) :     0 :   1.0 :     1 : False : False : Binary
+        (0, 0, 1200, 4) :     0 :   0.0 :     1 : False : False : Binary
+        (0, 0, 1200, 5) :     0 :   1.0 :     1 : False : False : Binary
+        (0, 1, 1200, 1) :     0 :   1.0 :     1 : False : False : Binary
+        (0, 1, 1200, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (0, 1, 1200, 3) :     0 :   1.0 :     1 : False : False : Binary
+        (0, 1, 1200, 4) :     0 :   0.0 :     1 : False : False : Binary
+        (0, 1, 1200, 5) :     0 :   1.0 :     1 : False : False : Binary
+        (0, 2, 1200, 1) :     0 :   0.0 :     1 : False : False : Binary
+        (0, 2, 1200, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (0, 2, 1200, 3) :     0 :   0.0 :     1 : False : False : Binary
+        (0, 2, 1200, 4) :     0 :   0.0 :     1 : False : False : Binary
+        (0, 2, 1200, 5) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 0, 1200, 1) :     0 :   1.0 :     1 : False : False : Binary
+        (1, 0, 1200, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 0, 1200, 3) :     0 :   1.0 :     1 : False : False : Binary
+        (1, 0, 1200, 4) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 0, 1200, 5) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 1, 1200, 1) :     0 :   1.0 :     1 : False : False : Binary
+        (1, 1, 1200, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 1, 1200, 3) :     0 :   1.0 :     1 : False : False : Binary
+        (1, 1, 1200, 4) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 1, 1200, 5) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 2, 1200, 1) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 2, 1200, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 2, 1200, 3) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 2, 1200, 4) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 2, 1200, 5) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 0, 1200, 1) :     0 :   1.0 :     1 : False : False : Binary
+        (2, 0, 1200, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 0, 1200, 3) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 0, 1200, 4) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 0, 1200, 5) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 1, 1200, 1) :     0 :   1.0 :     1 : False : False : Binary
+        (2, 1, 1200, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 1, 1200, 3) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 1, 1200, 4) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 1, 1200, 5) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 2, 1200, 1) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 2, 1200, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 2, 1200, 3) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 2, 1200, 4) :     0 :   0.0 :     1 : False : False : Binary
+        (2, 2, 1200, 5) :     0 :   0.0 :     1 : False : False : Binary
+    Y : Binary variable indicating whether a truck k has been used in time period t
+        Size=15, Index=Y_index
+        Key    : Lower : Value : Upper : Fixed : Stale : Domain
+        (0, 1) :     0 :   1.0 :     1 : False : False : Binary
+        (0, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (0, 3) :     0 :   1.0 :     1 : False : False : Binary
+        (0, 4) :     0 :  -0.0 :     1 : False : False : Binary
+        (0, 5) :     0 :   1.0 :     1 : False : False : Binary
+        (1, 1) :     0 :   1.0 :     1 : False : False : Binary
+        (1, 2) :     0 :   0.0 :     1 : False : False : Binary
+        (1, 3) :     0 :   1.0 :     1 : False : False : Binary
+        (1, 4) :     0 :  -0.0 :     1 : False : False : Binary
+        (1, 5) :     0 :  -0.0 :     1 : False : False : Binary
+        (2, 1) :     0 :   1.0 :     1 : False : False : Binary
+        (2, 2) :     0 :  -0.0 :     1 : False : False : Binary
+        (2, 3) :     0 :  -0.0 :     1 : False : False : Binary
+        (2, 4) :     0 :  -0.0 :     1 : False : False : Binary
+        (2, 5) :     0 :  -0.0 :     1 : False : False : Binary
+    vI : Inventory amount of i at the end of the time period t
+        Size=25, Index=vI_index
+        Key    : Lower : Value  : Upper : Fixed : Stale : Domain
+        (1, 1) :     0 : 2465.0 :  None : False : False : NonNegativeIntegers
+        (1, 2) :     0 : 1853.0 :  None : False : False : NonNegativeIntegers
+        (1, 3) :     0 : 2452.0 :  None : False : False : NonNegativeIntegers
+        (1, 4) :     0 : 1851.0 :  None : False : False : NonNegativeIntegers
+        (1, 5) :     0 : 1862.0 :  None : False : False : NonNegativeIntegers
+        (2, 1) :     0 : 2608.0 :  None : False : False : NonNegativeIntegers
+        (2, 2) :     0 : 2006.0 :  None : False : False : NonNegativeIntegers
+        (2, 3) :     0 : 2630.0 :  None : False : False : NonNegativeIntegers
+        (2, 4) :     0 : 1984.0 :  None : False : False : NonNegativeIntegers
+        (2, 5) :     0 : 2006.0 :  None : False : False : NonNegativeIntegers
+        (3, 1) :     0 : 1554.0 :  None : False : False : NonNegativeIntegers
+        (3, 2) :     0 : 1175.0 :  None : False : False : NonNegativeIntegers
+        (3, 3) :     0 : 1924.0 :  None : False : False : NonNegativeIntegers
+        (3, 4) :     0 : 1531.0 :  None : False : False : NonNegativeIntegers
+        (3, 5) :     0 : 1192.0 :  None : False : False : NonNegativeIntegers
+        (4, 1) :     0 : 1360.0 :  None : False : False : NonNegativeIntegers
+        (4, 2) :     0 : 1099.0 :  None : False : False : NonNegativeIntegers
+        (4, 3) :     0 : 1019.0 :  None : False : False : NonNegativeIntegers
+        (4, 4) :     0 :  770.0 :  None : False : False : NonNegativeIntegers
+        (4, 5) :     0 :  786.0 :  None : False : False : NonNegativeIntegers
+        (5, 1) :     0 :  846.0 :  None : False : False : NonNegativeIntegers
+        (5, 2) :     0 :  708.0 :  None : False : False : NonNegativeIntegers
+        (5, 3) :     0 :  591.0 :  None : False : False : NonNegativeIntegers
+        (5, 4) :     0 :  446.0 :  None : False : False : NonNegativeIntegers
+        (5, 5) :     0 :  426.0 :  None : False : False : NonNegativeIntegers
+
+1 Objective Declarations
+    objective : Size=1, Index=None, Active=True
+        Key  : Active : Sense    : Expression
+        None :   True : minimize : Y[0,1] + Y[0,2] + Y[0,3] + Y[0,4] + Y[0,5] + Y[1,1] + Y[1,2] + Y[1,3] + Y[1,4] + Y[1,5] + Y[2,1] + Y[2,2] + Y[2,3] + Y[2,4] + Y[2,5]
+
+11 Constraint Declarations
+    I2_rule : Size=25, Index=I2_rule_index, Active=True
+        Key    : Lower  : Body    : Upper : Active
+        (1, 1) : 1814.0 : vI[1,1] :  +Inf :   True
+        (1, 2) : 1851.0 : vI[1,2] :  +Inf :   True
+        (1, 3) : 1851.0 : vI[1,3] :  +Inf :   True
+        (1, 4) : 1851.0 : vI[1,4] :  +Inf :   True
+        (1, 5) : 1851.0 : vI[1,5] :  +Inf :   True
+        (2, 1) : 1884.0 : vI[2,1] :  +Inf :   True
+        (2, 2) : 1920.0 : vI[2,2] :  +Inf :   True
+        (2, 3) : 1920.0 : vI[2,3] :  +Inf :   True
+        (2, 4) : 1920.0 : vI[2,4] :  +Inf :   True
+        (2, 5) : 1920.0 : vI[2,5] :  +Inf :   True
+        (3, 1) : 1163.0 : vI[3,1] :  +Inf :   True
+        (3, 2) : 1153.0 : vI[3,2] :  +Inf :   True
+        (3, 3) : 1153.0 : vI[3,3] :  +Inf :   True
+        (3, 4) : 1153.0 : vI[3,4] :  +Inf :   True
+        (3, 5) : 1153.0 : vI[3,5] :  +Inf :   True
+        (4, 1) :  770.0 : vI[4,1] :  +Inf :   True
+        (4, 2) :  763.0 : vI[4,2] :  +Inf :   True
+        (4, 3) :  763.0 : vI[4,3] :  +Inf :   True
+        (4, 4) :  763.0 : vI[4,4] :  +Inf :   True
+        (4, 5) :  763.0 : vI[4,5] :  +Inf :   True
+        (5, 1) :  424.0 : vI[5,1] :  +Inf :   True
+        (5, 2) :  426.0 : vI[5,2] :  +Inf :   True
+        (5, 3) :  426.0 : vI[5,3] :  +Inf :   True
+        (5, 4) :  426.0 : vI[5,4] :  +Inf :   True
+        (5, 5) :  426.0 : vI[5,5] :  +Inf :   True
+    I_rule : Size=25, Index=I_rule_index, Active=True
+        Key    : Lower : Body                                                       : Upper : Active
+        (1, 1) :   0.0 :          vI[1,1] - (Q[1,0,1] + Q[1,1,1] + Q[1,2,1] + 1265) :   0.0 :   True
+        (1, 2) :   0.0 : vI[1,2] - (vI[1,1] - 612 + Q[1,0,2] + Q[1,1,2] + Q[1,2,2]) :   0.0 :   True
+        (1, 3) :   0.0 : vI[1,3] - (vI[1,2] - 601 + Q[1,0,3] + Q[1,1,3] + Q[1,2,3]) :   0.0 :   True
+        (1, 4) :   0.0 : vI[1,4] - (vI[1,3] - 601 + Q[1,0,4] + Q[1,1,4] + Q[1,2,4]) :   0.0 :   True
+        (1, 5) :   0.0 : vI[1,5] - (vI[1,4] - 649 + Q[1,0,5] + Q[1,1,5] + Q[1,2,5]) :   0.0 :   True
+        (2, 1) :   0.0 :          vI[2,1] - (Q[2,0,1] + Q[2,1,1] + Q[2,2,1] + 1228) :   0.0 :   True
+        (2, 2) :   0.0 : vI[2,2] - (vI[2,1] - 602 + Q[2,0,2] + Q[2,1,2] + Q[2,2,2]) :   0.0 :   True
+        (2, 3) :   0.0 : vI[2,3] - (vI[2,2] - 636 + Q[2,0,3] + Q[2,1,3] + Q[2,2,3]) :   0.0 :   True
+        (2, 4) :   0.0 : vI[2,4] - (vI[2,3] - 646 + Q[2,0,4] + Q[2,1,4] + Q[2,2,4]) :   0.0 :   True
+        (2, 5) :   0.0 : vI[2,5] - (vI[2,4] - 638 + Q[2,0,5] + Q[2,1,5] + Q[2,2,5]) :   0.0 :   True
+        (3, 1) :   0.0 :           vI[3,1] - (Q[3,0,1] + Q[3,1,1] + Q[3,2,1] + 744) :   0.0 :   True
+        (3, 2) :   0.0 : vI[3,2] - (vI[3,1] - 379 + Q[3,0,2] + Q[3,1,2] + Q[3,2,2]) :   0.0 :   True
+        (3, 3) :   0.0 : vI[3,3] - (vI[3,2] - 391 + Q[3,0,3] + Q[3,1,3] + Q[3,2,3]) :   0.0 :   True
+        (3, 4) :   0.0 : vI[3,4] - (vI[3,3] - 393 + Q[3,0,4] + Q[3,1,4] + Q[3,2,4]) :   0.0 :   True
+        (3, 5) :   0.0 : vI[3,5] - (vI[3,4] - 369 + Q[3,0,5] + Q[3,1,5] + Q[3,2,5]) :   0.0 :   True
+        (4, 1) :   0.0 :           vI[4,1] - (Q[4,0,1] + Q[4,1,1] + Q[4,2,1] + 490) :   0.0 :   True
+        (4, 2) :   0.0 : vI[4,2] - (vI[4,1] - 261 + Q[4,0,2] + Q[4,1,2] + Q[4,2,2]) :   0.0 :   True
+        (4, 3) :   0.0 : vI[4,3] - (vI[4,2] - 260 + Q[4,0,3] + Q[4,1,3] + Q[4,2,3]) :   0.0 :   True
+        (4, 4) :   0.0 : vI[4,4] - (vI[4,3] - 249 + Q[4,0,4] + Q[4,1,4] + Q[4,2,4]) :   0.0 :   True
+        (4, 5) :   0.0 : vI[4,5] - (vI[4,4] - 254 + Q[4,0,5] + Q[4,1,5] + Q[4,2,5]) :   0.0 :   True
+        (5, 1) :   0.0 :           vI[5,1] - (Q[5,0,1] + Q[5,1,1] + Q[5,2,1] + 294) :   0.0 :   True
+        (5, 2) :   0.0 : vI[5,2] - (vI[5,1] - 138 + Q[5,0,2] + Q[5,1,2] + Q[5,2,2]) :   0.0 :   True
+        (5, 3) :   0.0 : vI[5,3] - (vI[5,2] - 141 + Q[5,0,3] + Q[5,1,3] + Q[5,2,3]) :   0.0 :   True
+        (5, 4) :   0.0 : vI[5,4] - (vI[5,3] - 145 + Q[5,0,4] + Q[5,1,4] + Q[5,2,4]) :   0.0 :   True
+        (5, 5) :   0.0 : vI[5,5] - (vI[5,4] - 140 + Q[5,0,5] + Q[5,1,5] + Q[5,2,5]) :   0.0 :   True
+    M_rule : Size=90, Index=M_rule_index, Active=True
+        Key            : Lower : Body                                                                                    : Upper : Active
+        ('a', 0, 1, 0) :   0.0 : M[1,0,1,a,0] + M[2,0,1,a,0] + M[3,0,1,a,0] + M[4,0,1,a,0] + M[5,0,1,a,0] - 4*V[0,a,0,1] :   0.0 :   True
+        ('a', 0, 1, 1) :   0.0 : M[1,0,1,a,1] + M[2,0,1,a,1] + M[3,0,1,a,1] + M[4,0,1,a,1] + M[5,0,1,a,1] - 4*V[0,a,1,1] :   0.0 :   True
+        ('a', 0, 1, 2) :   0.0 : M[1,0,1,a,2] + M[2,0,1,a,2] + M[3,0,1,a,2] + M[4,0,1,a,2] + M[5,0,1,a,2] - 4*V[0,a,2,1] :   0.0 :   True
+        ('a', 0, 2, 0) :   0.0 : M[1,0,2,a,0] + M[2,0,2,a,0] + M[3,0,2,a,0] + M[4,0,2,a,0] + M[5,0,2,a,0] - 4*V[0,a,0,2] :   0.0 :   True
+        ('a', 0, 2, 1) :   0.0 : M[1,0,2,a,1] + M[2,0,2,a,1] + M[3,0,2,a,1] + M[4,0,2,a,1] + M[5,0,2,a,1] - 4*V[0,a,1,2] :   0.0 :   True
+        ('a', 0, 2, 2) :   0.0 : M[1,0,2,a,2] + M[2,0,2,a,2] + M[3,0,2,a,2] + M[4,0,2,a,2] + M[5,0,2,a,2] - 4*V[0,a,2,2] :   0.0 :   True
+        ('a', 0, 3, 0) :   0.0 : M[1,0,3,a,0] + M[2,0,3,a,0] + M[3,0,3,a,0] + M[4,0,3,a,0] + M[5,0,3,a,0] - 4*V[0,a,0,3] :   0.0 :   True
+        ('a', 0, 3, 1) :   0.0 : M[1,0,3,a,1] + M[2,0,3,a,1] + M[3,0,3,a,1] + M[4,0,3,a,1] + M[5,0,3,a,1] - 4*V[0,a,1,3] :   0.0 :   True
+        ('a', 0, 3, 2) :   0.0 : M[1,0,3,a,2] + M[2,0,3,a,2] + M[3,0,3,a,2] + M[4,0,3,a,2] + M[5,0,3,a,2] - 4*V[0,a,2,3] :   0.0 :   True
+        ('a', 0, 4, 0) :   0.0 : M[1,0,4,a,0] + M[2,0,4,a,0] + M[3,0,4,a,0] + M[4,0,4,a,0] + M[5,0,4,a,0] - 4*V[0,a,0,4] :   0.0 :   True
+        ('a', 0, 4, 1) :   0.0 : M[1,0,4,a,1] + M[2,0,4,a,1] + M[3,0,4,a,1] + M[4,0,4,a,1] + M[5,0,4,a,1] - 4*V[0,a,1,4] :   0.0 :   True
+        ('a', 0, 4, 2) :   0.0 : M[1,0,4,a,2] + M[2,0,4,a,2] + M[3,0,4,a,2] + M[4,0,4,a,2] + M[5,0,4,a,2] - 4*V[0,a,2,4] :   0.0 :   True
+        ('a', 0, 5, 0) :   0.0 : M[1,0,5,a,0] + M[2,0,5,a,0] + M[3,0,5,a,0] + M[4,0,5,a,0] + M[5,0,5,a,0] - 4*V[0,a,0,5] :   0.0 :   True
+        ('a', 0, 5, 1) :   0.0 : M[1,0,5,a,1] + M[2,0,5,a,1] + M[3,0,5,a,1] + M[4,0,5,a,1] + M[5,0,5,a,1] - 4*V[0,a,1,5] :   0.0 :   True
+        ('a', 0, 5, 2) :   0.0 : M[1,0,5,a,2] + M[2,0,5,a,2] + M[3,0,5,a,2] + M[4,0,5,a,2] + M[5,0,5,a,2] - 4*V[0,a,2,5] :   0.0 :   True
+        ('a', 1, 1, 0) :   0.0 : M[1,1,1,a,0] + M[2,1,1,a,0] + M[3,1,1,a,0] + M[4,1,1,a,0] + M[5,1,1,a,0] - 4*V[1,a,0,1] :   0.0 :   True
+        ('a', 1, 1, 1) :   0.0 : M[1,1,1,a,1] + M[2,1,1,a,1] + M[3,1,1,a,1] + M[4,1,1,a,1] + M[5,1,1,a,1] - 4*V[1,a,1,1] :   0.0 :   True
+        ('a', 1, 1, 2) :   0.0 : M[1,1,1,a,2] + M[2,1,1,a,2] + M[3,1,1,a,2] + M[4,1,1,a,2] + M[5,1,1,a,2] - 4*V[1,a,2,1] :   0.0 :   True
+        ('a', 1, 2, 0) :   0.0 : M[1,1,2,a,0] + M[2,1,2,a,0] + M[3,1,2,a,0] + M[4,1,2,a,0] + M[5,1,2,a,0] - 4*V[1,a,0,2] :   0.0 :   True
+        ('a', 1, 2, 1) :   0.0 : M[1,1,2,a,1] + M[2,1,2,a,1] + M[3,1,2,a,1] + M[4,1,2,a,1] + M[5,1,2,a,1] - 4*V[1,a,1,2] :   0.0 :   True
+        ('a', 1, 2, 2) :   0.0 : M[1,1,2,a,2] + M[2,1,2,a,2] + M[3,1,2,a,2] + M[4,1,2,a,2] + M[5,1,2,a,2] - 4*V[1,a,2,2] :   0.0 :   True
+        ('a', 1, 3, 0) :   0.0 : M[1,1,3,a,0] + M[2,1,3,a,0] + M[3,1,3,a,0] + M[4,1,3,a,0] + M[5,1,3,a,0] - 4*V[1,a,0,3] :   0.0 :   True
+        ('a', 1, 3, 1) :   0.0 : M[1,1,3,a,1] + M[2,1,3,a,1] + M[3,1,3,a,1] + M[4,1,3,a,1] + M[5,1,3,a,1] - 4*V[1,a,1,3] :   0.0 :   True
+        ('a', 1, 3, 2) :   0.0 : M[1,1,3,a,2] + M[2,1,3,a,2] + M[3,1,3,a,2] + M[4,1,3,a,2] + M[5,1,3,a,2] - 4*V[1,a,2,3] :   0.0 :   True
+        ('a', 1, 4, 0) :   0.0 : M[1,1,4,a,0] + M[2,1,4,a,0] + M[3,1,4,a,0] + M[4,1,4,a,0] + M[5,1,4,a,0] - 4*V[1,a,0,4] :   0.0 :   True
+        ('a', 1, 4, 1) :   0.0 : M[1,1,4,a,1] + M[2,1,4,a,1] + M[3,1,4,a,1] + M[4,1,4,a,1] + M[5,1,4,a,1] - 4*V[1,a,1,4] :   0.0 :   True
+        ('a', 1, 4, 2) :   0.0 : M[1,1,4,a,2] + M[2,1,4,a,2] + M[3,1,4,a,2] + M[4,1,4,a,2] + M[5,1,4,a,2] - 4*V[1,a,2,4] :   0.0 :   True
+        ('a', 1, 5, 0) :   0.0 : M[1,1,5,a,0] + M[2,1,5,a,0] + M[3,1,5,a,0] + M[4,1,5,a,0] + M[5,1,5,a,0] - 4*V[1,a,0,5] :   0.0 :   True
+        ('a', 1, 5, 1) :   0.0 : M[1,1,5,a,1] + M[2,1,5,a,1] + M[3,1,5,a,1] + M[4,1,5,a,1] + M[5,1,5,a,1] - 4*V[1,a,1,5] :   0.0 :   True
+        ('a', 1, 5, 2) :   0.0 : M[1,1,5,a,2] + M[2,1,5,a,2] + M[3,1,5,a,2] + M[4,1,5,a,2] + M[5,1,5,a,2] - 4*V[1,a,2,5] :   0.0 :   True
+        ('a', 2, 1, 0) :   0.0 : M[1,2,1,a,0] + M[2,2,1,a,0] + M[3,2,1,a,0] + M[4,2,1,a,0] + M[5,2,1,a,0] - 4*V[2,a,0,1] :   0.0 :   True
+        ('a', 2, 1, 1) :   0.0 : M[1,2,1,a,1] + M[2,2,1,a,1] + M[3,2,1,a,1] + M[4,2,1,a,1] + M[5,2,1,a,1] - 4*V[2,a,1,1] :   0.0 :   True
+        ('a', 2, 1, 2) :   0.0 : M[1,2,1,a,2] + M[2,2,1,a,2] + M[3,2,1,a,2] + M[4,2,1,a,2] + M[5,2,1,a,2] - 4*V[2,a,2,1] :   0.0 :   True
+        ('a', 2, 2, 0) :   0.0 : M[1,2,2,a,0] + M[2,2,2,a,0] + M[3,2,2,a,0] + M[4,2,2,a,0] + M[5,2,2,a,0] - 4*V[2,a,0,2] :   0.0 :   True
+        ('a', 2, 2, 1) :   0.0 : M[1,2,2,a,1] + M[2,2,2,a,1] + M[3,2,2,a,1] + M[4,2,2,a,1] + M[5,2,2,a,1] - 4*V[2,a,1,2] :   0.0 :   True
+        ('a', 2, 2, 2) :   0.0 : M[1,2,2,a,2] + M[2,2,2,a,2] + M[3,2,2,a,2] + M[4,2,2,a,2] + M[5,2,2,a,2] - 4*V[2,a,2,2] :   0.0 :   True
+        ('a', 2, 3, 0) :   0.0 : M[1,2,3,a,0] + M[2,2,3,a,0] + M[3,2,3,a,0] + M[4,2,3,a,0] + M[5,2,3,a,0] - 4*V[2,a,0,3] :   0.0 :   True
+        ('a', 2, 3, 1) :   0.0 : M[1,2,3,a,1] + M[2,2,3,a,1] + M[3,2,3,a,1] + M[4,2,3,a,1] + M[5,2,3,a,1] - 4*V[2,a,1,3] :   0.0 :   True
+        ('a', 2, 3, 2) :   0.0 : M[1,2,3,a,2] + M[2,2,3,a,2] + M[3,2,3,a,2] + M[4,2,3,a,2] + M[5,2,3,a,2] - 4*V[2,a,2,3] :   0.0 :   True
+        ('a', 2, 4, 0) :   0.0 : M[1,2,4,a,0] + M[2,2,4,a,0] + M[3,2,4,a,0] + M[4,2,4,a,0] + M[5,2,4,a,0] - 4*V[2,a,0,4] :   0.0 :   True
+        ('a', 2, 4, 1) :   0.0 : M[1,2,4,a,1] + M[2,2,4,a,1] + M[3,2,4,a,1] + M[4,2,4,a,1] + M[5,2,4,a,1] - 4*V[2,a,1,4] :   0.0 :   True
+        ('a', 2, 4, 2) :   0.0 : M[1,2,4,a,2] + M[2,2,4,a,2] + M[3,2,4,a,2] + M[4,2,4,a,2] + M[5,2,4,a,2] - 4*V[2,a,2,4] :   0.0 :   True
+        ('a', 2, 5, 0) :   0.0 : M[1,2,5,a,0] + M[2,2,5,a,0] + M[3,2,5,a,0] + M[4,2,5,a,0] + M[5,2,5,a,0] - 4*V[2,a,0,5] :   0.0 :   True
+        ('a', 2, 5, 1) :   0.0 : M[1,2,5,a,1] + M[2,2,5,a,1] + M[3,2,5,a,1] + M[4,2,5,a,1] + M[5,2,5,a,1] - 4*V[2,a,1,5] :   0.0 :   True
+        ('a', 2, 5, 2) :   0.0 : M[1,2,5,a,2] + M[2,2,5,a,2] + M[3,2,5,a,2] + M[4,2,5,a,2] + M[5,2,5,a,2] - 4*V[2,a,2,5] :   0.0 :   True
+        ('b', 0, 1, 0) :   0.0 : M[1,0,1,b,0] + M[2,0,1,b,0] + M[3,0,1,b,0] + M[4,0,1,b,0] + M[5,0,1,b,0] - 4*V[0,b,0,1] :   0.0 :   True
+        ('b', 0, 1, 1) :   0.0 : M[1,0,1,b,1] + M[2,0,1,b,1] + M[3,0,1,b,1] + M[4,0,1,b,1] + M[5,0,1,b,1] - 4*V[0,b,1,1] :   0.0 :   True
+        ('b', 0, 1, 2) :   0.0 : M[1,0,1,b,2] + M[2,0,1,b,2] + M[3,0,1,b,2] + M[4,0,1,b,2] + M[5,0,1,b,2] - 4*V[0,b,2,1] :   0.0 :   True
+        ('b', 0, 2, 0) :   0.0 : M[1,0,2,b,0] + M[2,0,2,b,0] + M[3,0,2,b,0] + M[4,0,2,b,0] + M[5,0,2,b,0] - 4*V[0,b,0,2] :   0.0 :   True
+        ('b', 0, 2, 1) :   0.0 : M[1,0,2,b,1] + M[2,0,2,b,1] + M[3,0,2,b,1] + M[4,0,2,b,1] + M[5,0,2,b,1] - 4*V[0,b,1,2] :   0.0 :   True
+        ('b', 0, 2, 2) :   0.0 : M[1,0,2,b,2] + M[2,0,2,b,2] + M[3,0,2,b,2] + M[4,0,2,b,2] + M[5,0,2,b,2] - 4*V[0,b,2,2] :   0.0 :   True
+        ('b', 0, 3, 0) :   0.0 : M[1,0,3,b,0] + M[2,0,3,b,0] + M[3,0,3,b,0] + M[4,0,3,b,0] + M[5,0,3,b,0] - 4*V[0,b,0,3] :   0.0 :   True
+        ('b', 0, 3, 1) :   0.0 : M[1,0,3,b,1] + M[2,0,3,b,1] + M[3,0,3,b,1] + M[4,0,3,b,1] + M[5,0,3,b,1] - 4*V[0,b,1,3] :   0.0 :   True
+        ('b', 0, 3, 2) :   0.0 : M[1,0,3,b,2] + M[2,0,3,b,2] + M[3,0,3,b,2] + M[4,0,3,b,2] + M[5,0,3,b,2] - 4*V[0,b,2,3] :   0.0 :   True
+        ('b', 0, 4, 0) :   0.0 : M[1,0,4,b,0] + M[2,0,4,b,0] + M[3,0,4,b,0] + M[4,0,4,b,0] + M[5,0,4,b,0] - 4*V[0,b,0,4] :   0.0 :   True
+        ('b', 0, 4, 1) :   0.0 : M[1,0,4,b,1] + M[2,0,4,b,1] + M[3,0,4,b,1] + M[4,0,4,b,1] + M[5,0,4,b,1] - 4*V[0,b,1,4] :   0.0 :   True
+        ('b', 0, 4, 2) :   0.0 : M[1,0,4,b,2] + M[2,0,4,b,2] + M[3,0,4,b,2] + M[4,0,4,b,2] + M[5,0,4,b,2] - 4*V[0,b,2,4] :   0.0 :   True
+        ('b', 0, 5, 0) :   0.0 : M[1,0,5,b,0] + M[2,0,5,b,0] + M[3,0,5,b,0] + M[4,0,5,b,0] + M[5,0,5,b,0] - 4*V[0,b,0,5] :   0.0 :   True
+        ('b', 0, 5, 1) :   0.0 : M[1,0,5,b,1] + M[2,0,5,b,1] + M[3,0,5,b,1] + M[4,0,5,b,1] + M[5,0,5,b,1] - 4*V[0,b,1,5] :   0.0 :   True
+        ('b', 0, 5, 2) :   0.0 : M[1,0,5,b,2] + M[2,0,5,b,2] + M[3,0,5,b,2] + M[4,0,5,b,2] + M[5,0,5,b,2] - 4*V[0,b,2,5] :   0.0 :   True
+        ('b', 1, 1, 0) :   0.0 : M[1,1,1,b,0] + M[2,1,1,b,0] + M[3,1,1,b,0] + M[4,1,1,b,0] + M[5,1,1,b,0] - 4*V[1,b,0,1] :   0.0 :   True
+        ('b', 1, 1, 1) :   0.0 : M[1,1,1,b,1] + M[2,1,1,b,1] + M[3,1,1,b,1] + M[4,1,1,b,1] + M[5,1,1,b,1] - 4*V[1,b,1,1] :   0.0 :   True
+        ('b', 1, 1, 2) :   0.0 : M[1,1,1,b,2] + M[2,1,1,b,2] + M[3,1,1,b,2] + M[4,1,1,b,2] + M[5,1,1,b,2] - 4*V[1,b,2,1] :   0.0 :   True
+        ('b', 1, 2, 0) :   0.0 : M[1,1,2,b,0] + M[2,1,2,b,0] + M[3,1,2,b,0] + M[4,1,2,b,0] + M[5,1,2,b,0] - 4*V[1,b,0,2] :   0.0 :   True
+        ('b', 1, 2, 1) :   0.0 : M[1,1,2,b,1] + M[2,1,2,b,1] + M[3,1,2,b,1] + M[4,1,2,b,1] + M[5,1,2,b,1] - 4*V[1,b,1,2] :   0.0 :   True
+        ('b', 1, 2, 2) :   0.0 : M[1,1,2,b,2] + M[2,1,2,b,2] + M[3,1,2,b,2] + M[4,1,2,b,2] + M[5,1,2,b,2] - 4*V[1,b,2,2] :   0.0 :   True
+        ('b', 1, 3, 0) :   0.0 : M[1,1,3,b,0] + M[2,1,3,b,0] + M[3,1,3,b,0] + M[4,1,3,b,0] + M[5,1,3,b,0] - 4*V[1,b,0,3] :   0.0 :   True
+        ('b', 1, 3, 1) :   0.0 : M[1,1,3,b,1] + M[2,1,3,b,1] + M[3,1,3,b,1] + M[4,1,3,b,1] + M[5,1,3,b,1] - 4*V[1,b,1,3] :   0.0 :   True
+        ('b', 1, 3, 2) :   0.0 : M[1,1,3,b,2] + M[2,1,3,b,2] + M[3,1,3,b,2] + M[4,1,3,b,2] + M[5,1,3,b,2] - 4*V[1,b,2,3] :   0.0 :   True
+        ('b', 1, 4, 0) :   0.0 : M[1,1,4,b,0] + M[2,1,4,b,0] + M[3,1,4,b,0] + M[4,1,4,b,0] + M[5,1,4,b,0] - 4*V[1,b,0,4] :   0.0 :   True
+        ('b', 1, 4, 1) :   0.0 : M[1,1,4,b,1] + M[2,1,4,b,1] + M[3,1,4,b,1] + M[4,1,4,b,1] + M[5,1,4,b,1] - 4*V[1,b,1,4] :   0.0 :   True
+        ('b', 1, 4, 2) :   0.0 : M[1,1,4,b,2] + M[2,1,4,b,2] + M[3,1,4,b,2] + M[4,1,4,b,2] + M[5,1,4,b,2] - 4*V[1,b,2,4] :   0.0 :   True
+        ('b', 1, 5, 0) :   0.0 : M[1,1,5,b,0] + M[2,1,5,b,0] + M[3,1,5,b,0] + M[4,1,5,b,0] + M[5,1,5,b,0] - 4*V[1,b,0,5] :   0.0 :   True
+        ('b', 1, 5, 1) :   0.0 : M[1,1,5,b,1] + M[2,1,5,b,1] + M[3,1,5,b,1] + M[4,1,5,b,1] + M[5,1,5,b,1] - 4*V[1,b,1,5] :   0.0 :   True
+        ('b', 1, 5, 2) :   0.0 : M[1,1,5,b,2] + M[2,1,5,b,2] + M[3,1,5,b,2] + M[4,1,5,b,2] + M[5,1,5,b,2] - 4*V[1,b,2,5] :   0.0 :   True
+        ('b', 2, 1, 0) :   0.0 : M[1,2,1,b,0] + M[2,2,1,b,0] + M[3,2,1,b,0] + M[4,2,1,b,0] + M[5,2,1,b,0] - 4*V[2,b,0,1] :   0.0 :   True
+        ('b', 2, 1, 1) :   0.0 : M[1,2,1,b,1] + M[2,2,1,b,1] + M[3,2,1,b,1] + M[4,2,1,b,1] + M[5,2,1,b,1] - 4*V[2,b,1,1] :   0.0 :   True
+        ('b', 2, 1, 2) :   0.0 : M[1,2,1,b,2] + M[2,2,1,b,2] + M[3,2,1,b,2] + M[4,2,1,b,2] + M[5,2,1,b,2] - 4*V[2,b,2,1] :   0.0 :   True
+        ('b', 2, 2, 0) :   0.0 : M[1,2,2,b,0] + M[2,2,2,b,0] + M[3,2,2,b,0] + M[4,2,2,b,0] + M[5,2,2,b,0] - 4*V[2,b,0,2] :   0.0 :   True
+        ('b', 2, 2, 1) :   0.0 : M[1,2,2,b,1] + M[2,2,2,b,1] + M[3,2,2,b,1] + M[4,2,2,b,1] + M[5,2,2,b,1] - 4*V[2,b,1,2] :   0.0 :   True
+        ('b', 2, 2, 2) :   0.0 : M[1,2,2,b,2] + M[2,2,2,b,2] + M[3,2,2,b,2] + M[4,2,2,b,2] + M[5,2,2,b,2] - 4*V[2,b,2,2] :   0.0 :   True
+        ('b', 2, 3, 0) :   0.0 : M[1,2,3,b,0] + M[2,2,3,b,0] + M[3,2,3,b,0] + M[4,2,3,b,0] + M[5,2,3,b,0] - 4*V[2,b,0,3] :   0.0 :   True
+        ('b', 2, 3, 1) :   0.0 : M[1,2,3,b,1] + M[2,2,3,b,1] + M[3,2,3,b,1] + M[4,2,3,b,1] + M[5,2,3,b,1] - 4*V[2,b,1,3] :   0.0 :   True
+        ('b', 2, 3, 2) :   0.0 : M[1,2,3,b,2] + M[2,2,3,b,2] + M[3,2,3,b,2] + M[4,2,3,b,2] + M[5,2,3,b,2] - 4*V[2,b,2,3] :   0.0 :   True
+        ('b', 2, 4, 0) :   0.0 : M[1,2,4,b,0] + M[2,2,4,b,0] + M[3,2,4,b,0] + M[4,2,4,b,0] + M[5,2,4,b,0] - 4*V[2,b,0,4] :   0.0 :   True
+        ('b', 2, 4, 1) :   0.0 : M[1,2,4,b,1] + M[2,2,4,b,1] + M[3,2,4,b,1] + M[4,2,4,b,1] + M[5,2,4,b,1] - 4*V[2,b,1,4] :   0.0 :   True
+        ('b', 2, 4, 2) :   0.0 : M[1,2,4,b,2] + M[2,2,4,b,2] + M[3,2,4,b,2] + M[4,2,4,b,2] + M[5,2,4,b,2] - 4*V[2,b,2,4] :   0.0 :   True
+        ('b', 2, 5, 0) :   0.0 : M[1,2,5,b,0] + M[2,2,5,b,0] + M[3,2,5,b,0] + M[4,2,5,b,0] + M[5,2,5,b,0] - 4*V[2,b,0,5] :   0.0 :   True
+        ('b', 2, 5, 1) :   0.0 : M[1,2,5,b,1] + M[2,2,5,b,1] + M[3,2,5,b,1] + M[4,2,5,b,1] + M[5,2,5,b,1] - 4*V[2,b,1,5] :   0.0 :   True
+        ('b', 2, 5, 2) :   0.0 : M[1,2,5,b,2] + M[2,2,5,b,2] + M[3,2,5,b,2] + M[4,2,5,b,2] + M[5,2,5,b,2] - 4*V[2,b,2,5] :   0.0 :   True
+    Q_rule : Size=75, Index=Q_rule_index, Active=True
+        Key       : Lower : Body                                                                                                                               : Upper : Active
+        (1, 0, 1) :   0.0 : Q[1,0,1] - (30.0*M[1,0,1,a,0] + 30.0*M[1,0,1,a,1] + 30.0*M[1,0,1,a,2] + 30.0*M[1,0,1,b,0] + 30.0*M[1,0,1,b,1] + 30.0*M[1,0,1,b,2]) :   0.0 :   True
+        (1, 0, 2) :   0.0 : Q[1,0,2] - (30.0*M[1,0,2,a,0] + 30.0*M[1,0,2,a,1] + 30.0*M[1,0,2,a,2] + 30.0*M[1,0,2,b,0] + 30.0*M[1,0,2,b,1] + 30.0*M[1,0,2,b,2]) :   0.0 :   True
+        (1, 0, 3) :   0.0 : Q[1,0,3] - (30.0*M[1,0,3,a,0] + 30.0*M[1,0,3,a,1] + 30.0*M[1,0,3,a,2] + 30.0*M[1,0,3,b,0] + 30.0*M[1,0,3,b,1] + 30.0*M[1,0,3,b,2]) :   0.0 :   True
+        (1, 0, 4) :   0.0 : Q[1,0,4] - (30.0*M[1,0,4,a,0] + 30.0*M[1,0,4,a,1] + 30.0*M[1,0,4,a,2] + 30.0*M[1,0,4,b,0] + 30.0*M[1,0,4,b,1] + 30.0*M[1,0,4,b,2]) :   0.0 :   True
+        (1, 0, 5) :   0.0 : Q[1,0,5] - (30.0*M[1,0,5,a,0] + 30.0*M[1,0,5,a,1] + 30.0*M[1,0,5,a,2] + 30.0*M[1,0,5,b,0] + 30.0*M[1,0,5,b,1] + 30.0*M[1,0,5,b,2]) :   0.0 :   True
+        (1, 1, 1) :   0.0 : Q[1,1,1] - (30.0*M[1,1,1,a,0] + 30.0*M[1,1,1,a,1] + 30.0*M[1,1,1,a,2] + 30.0*M[1,1,1,b,0] + 30.0*M[1,1,1,b,1] + 30.0*M[1,1,1,b,2]) :   0.0 :   True
+        (1, 1, 2) :   0.0 : Q[1,1,2] - (30.0*M[1,1,2,a,0] + 30.0*M[1,1,2,a,1] + 30.0*M[1,1,2,a,2] + 30.0*M[1,1,2,b,0] + 30.0*M[1,1,2,b,1] + 30.0*M[1,1,2,b,2]) :   0.0 :   True
+        (1, 1, 3) :   0.0 : Q[1,1,3] - (30.0*M[1,1,3,a,0] + 30.0*M[1,1,3,a,1] + 30.0*M[1,1,3,a,2] + 30.0*M[1,1,3,b,0] + 30.0*M[1,1,3,b,1] + 30.0*M[1,1,3,b,2]) :   0.0 :   True
+        (1, 1, 4) :   0.0 : Q[1,1,4] - (30.0*M[1,1,4,a,0] + 30.0*M[1,1,4,a,1] + 30.0*M[1,1,4,a,2] + 30.0*M[1,1,4,b,0] + 30.0*M[1,1,4,b,1] + 30.0*M[1,1,4,b,2]) :   0.0 :   True
+        (1, 1, 5) :   0.0 : Q[1,1,5] - (30.0*M[1,1,5,a,0] + 30.0*M[1,1,5,a,1] + 30.0*M[1,1,5,a,2] + 30.0*M[1,1,5,b,0] + 30.0*M[1,1,5,b,1] + 30.0*M[1,1,5,b,2]) :   0.0 :   True
+        (1, 2, 1) :   0.0 : Q[1,2,1] - (30.0*M[1,2,1,a,0] + 30.0*M[1,2,1,a,1] + 30.0*M[1,2,1,a,2] + 30.0*M[1,2,1,b,0] + 30.0*M[1,2,1,b,1] + 30.0*M[1,2,1,b,2]) :   0.0 :   True
+        (1, 2, 2) :   0.0 : Q[1,2,2] - (30.0*M[1,2,2,a,0] + 30.0*M[1,2,2,a,1] + 30.0*M[1,2,2,a,2] + 30.0*M[1,2,2,b,0] + 30.0*M[1,2,2,b,1] + 30.0*M[1,2,2,b,2]) :   0.0 :   True
+        (1, 2, 3) :   0.0 : Q[1,2,3] - (30.0*M[1,2,3,a,0] + 30.0*M[1,2,3,a,1] + 30.0*M[1,2,3,a,2] + 30.0*M[1,2,3,b,0] + 30.0*M[1,2,3,b,1] + 30.0*M[1,2,3,b,2]) :   0.0 :   True
+        (1, 2, 4) :   0.0 : Q[1,2,4] - (30.0*M[1,2,4,a,0] + 30.0*M[1,2,4,a,1] + 30.0*M[1,2,4,a,2] + 30.0*M[1,2,4,b,0] + 30.0*M[1,2,4,b,1] + 30.0*M[1,2,4,b,2]) :   0.0 :   True
+        (1, 2, 5) :   0.0 : Q[1,2,5] - (30.0*M[1,2,5,a,0] + 30.0*M[1,2,5,a,1] + 30.0*M[1,2,5,a,2] + 30.0*M[1,2,5,b,0] + 30.0*M[1,2,5,b,1] + 30.0*M[1,2,5,b,2]) :   0.0 :   True
+        (2, 0, 1) :   0.0 : Q[2,0,1] - (30.0*M[2,0,1,a,0] + 30.0*M[2,0,1,a,1] + 30.0*M[2,0,1,a,2] + 30.0*M[2,0,1,b,0] + 30.0*M[2,0,1,b,1] + 30.0*M[2,0,1,b,2]) :   0.0 :   True
+        (2, 0, 2) :   0.0 : Q[2,0,2] - (30.0*M[2,0,2,a,0] + 30.0*M[2,0,2,a,1] + 30.0*M[2,0,2,a,2] + 30.0*M[2,0,2,b,0] + 30.0*M[2,0,2,b,1] + 30.0*M[2,0,2,b,2]) :   0.0 :   True
+        (2, 0, 3) :   0.0 : Q[2,0,3] - (30.0*M[2,0,3,a,0] + 30.0*M[2,0,3,a,1] + 30.0*M[2,0,3,a,2] + 30.0*M[2,0,3,b,0] + 30.0*M[2,0,3,b,1] + 30.0*M[2,0,3,b,2]) :   0.0 :   True
+        (2, 0, 4) :   0.0 : Q[2,0,4] - (30.0*M[2,0,4,a,0] + 30.0*M[2,0,4,a,1] + 30.0*M[2,0,4,a,2] + 30.0*M[2,0,4,b,0] + 30.0*M[2,0,4,b,1] + 30.0*M[2,0,4,b,2]) :   0.0 :   True
+        (2, 0, 5) :   0.0 : Q[2,0,5] - (30.0*M[2,0,5,a,0] + 30.0*M[2,0,5,a,1] + 30.0*M[2,0,5,a,2] + 30.0*M[2,0,5,b,0] + 30.0*M[2,0,5,b,1] + 30.0*M[2,0,5,b,2]) :   0.0 :   True
+        (2, 1, 1) :   0.0 : Q[2,1,1] - (30.0*M[2,1,1,a,0] + 30.0*M[2,1,1,a,1] + 30.0*M[2,1,1,a,2] + 30.0*M[2,1,1,b,0] + 30.0*M[2,1,1,b,1] + 30.0*M[2,1,1,b,2]) :   0.0 :   True
+        (2, 1, 2) :   0.0 : Q[2,1,2] - (30.0*M[2,1,2,a,0] + 30.0*M[2,1,2,a,1] + 30.0*M[2,1,2,a,2] + 30.0*M[2,1,2,b,0] + 30.0*M[2,1,2,b,1] + 30.0*M[2,1,2,b,2]) :   0.0 :   True
+        (2, 1, 3) :   0.0 : Q[2,1,3] - (30.0*M[2,1,3,a,0] + 30.0*M[2,1,3,a,1] + 30.0*M[2,1,3,a,2] + 30.0*M[2,1,3,b,0] + 30.0*M[2,1,3,b,1] + 30.0*M[2,1,3,b,2]) :   0.0 :   True
+        (2, 1, 4) :   0.0 : Q[2,1,4] - (30.0*M[2,1,4,a,0] + 30.0*M[2,1,4,a,1] + 30.0*M[2,1,4,a,2] + 30.0*M[2,1,4,b,0] + 30.0*M[2,1,4,b,1] + 30.0*M[2,1,4,b,2]) :   0.0 :   True
+        (2, 1, 5) :   0.0 : Q[2,1,5] - (30.0*M[2,1,5,a,0] + 30.0*M[2,1,5,a,1] + 30.0*M[2,1,5,a,2] + 30.0*M[2,1,5,b,0] + 30.0*M[2,1,5,b,1] + 30.0*M[2,1,5,b,2]) :   0.0 :   True
+        (2, 2, 1) :   0.0 : Q[2,2,1] - (30.0*M[2,2,1,a,0] + 30.0*M[2,2,1,a,1] + 30.0*M[2,2,1,a,2] + 30.0*M[2,2,1,b,0] + 30.0*M[2,2,1,b,1] + 30.0*M[2,2,1,b,2]) :   0.0 :   True
+        (2, 2, 2) :   0.0 : Q[2,2,2] - (30.0*M[2,2,2,a,0] + 30.0*M[2,2,2,a,1] + 30.0*M[2,2,2,a,2] + 30.0*M[2,2,2,b,0] + 30.0*M[2,2,2,b,1] + 30.0*M[2,2,2,b,2]) :   0.0 :   True
+        (2, 2, 3) :   0.0 : Q[2,2,3] - (30.0*M[2,2,3,a,0] + 30.0*M[2,2,3,a,1] + 30.0*M[2,2,3,a,2] + 30.0*M[2,2,3,b,0] + 30.0*M[2,2,3,b,1] + 30.0*M[2,2,3,b,2]) :   0.0 :   True
+        (2, 2, 4) :   0.0 : Q[2,2,4] - (30.0*M[2,2,4,a,0] + 30.0*M[2,2,4,a,1] + 30.0*M[2,2,4,a,2] + 30.0*M[2,2,4,b,0] + 30.0*M[2,2,4,b,1] + 30.0*M[2,2,4,b,2]) :   0.0 :   True
+        (2, 2, 5) :   0.0 : Q[2,2,5] - (30.0*M[2,2,5,a,0] + 30.0*M[2,2,5,a,1] + 30.0*M[2,2,5,a,2] + 30.0*M[2,2,5,b,0] + 30.0*M[2,2,5,b,1] + 30.0*M[2,2,5,b,2]) :   0.0 :   True
+        (3, 0, 1) :   0.0 : Q[3,0,1] - (15.0*M[3,0,1,a,0] + 15.0*M[3,0,1,a,1] + 15.0*M[3,0,1,a,2] + 30.0*M[3,0,1,b,0] + 30.0*M[3,0,1,b,1] + 30.0*M[3,0,1,b,2]) :   0.0 :   True
+        (3, 0, 2) :   0.0 : Q[3,0,2] - (15.0*M[3,0,2,a,0] + 15.0*M[3,0,2,a,1] + 15.0*M[3,0,2,a,2] + 30.0*M[3,0,2,b,0] + 30.0*M[3,0,2,b,1] + 30.0*M[3,0,2,b,2]) :   0.0 :   True
+        (3, 0, 3) :   0.0 : Q[3,0,3] - (15.0*M[3,0,3,a,0] + 15.0*M[3,0,3,a,1] + 15.0*M[3,0,3,a,2] + 30.0*M[3,0,3,b,0] + 30.0*M[3,0,3,b,1] + 30.0*M[3,0,3,b,2]) :   0.0 :   True
+        (3, 0, 4) :   0.0 : Q[3,0,4] - (15.0*M[3,0,4,a,0] + 15.0*M[3,0,4,a,1] + 15.0*M[3,0,4,a,2] + 30.0*M[3,0,4,b,0] + 30.0*M[3,0,4,b,1] + 30.0*M[3,0,4,b,2]) :   0.0 :   True
+        (3, 0, 5) :   0.0 : Q[3,0,5] - (15.0*M[3,0,5,a,0] + 15.0*M[3,0,5,a,1] + 15.0*M[3,0,5,a,2] + 30.0*M[3,0,5,b,0] + 30.0*M[3,0,5,b,1] + 30.0*M[3,0,5,b,2]) :   0.0 :   True
+        (3, 1, 1) :   0.0 : Q[3,1,1] - (15.0*M[3,1,1,a,0] + 15.0*M[3,1,1,a,1] + 15.0*M[3,1,1,a,2] + 30.0*M[3,1,1,b,0] + 30.0*M[3,1,1,b,1] + 30.0*M[3,1,1,b,2]) :   0.0 :   True
+        (3, 1, 2) :   0.0 : Q[3,1,2] - (15.0*M[3,1,2,a,0] + 15.0*M[3,1,2,a,1] + 15.0*M[3,1,2,a,2] + 30.0*M[3,1,2,b,0] + 30.0*M[3,1,2,b,1] + 30.0*M[3,1,2,b,2]) :   0.0 :   True
+        (3, 1, 3) :   0.0 : Q[3,1,3] - (15.0*M[3,1,3,a,0] + 15.0*M[3,1,3,a,1] + 15.0*M[3,1,3,a,2] + 30.0*M[3,1,3,b,0] + 30.0*M[3,1,3,b,1] + 30.0*M[3,1,3,b,2]) :   0.0 :   True
+        (3, 1, 4) :   0.0 : Q[3,1,4] - (15.0*M[3,1,4,a,0] + 15.0*M[3,1,4,a,1] + 15.0*M[3,1,4,a,2] + 30.0*M[3,1,4,b,0] + 30.0*M[3,1,4,b,1] + 30.0*M[3,1,4,b,2]) :   0.0 :   True
+        (3, 1, 5) :   0.0 : Q[3,1,5] - (15.0*M[3,1,5,a,0] + 15.0*M[3,1,5,a,1] + 15.0*M[3,1,5,a,2] + 30.0*M[3,1,5,b,0] + 30.0*M[3,1,5,b,1] + 30.0*M[3,1,5,b,2]) :   0.0 :   True
+        (3, 2, 1) :   0.0 : Q[3,2,1] - (15.0*M[3,2,1,a,0] + 15.0*M[3,2,1,a,1] + 15.0*M[3,2,1,a,2] + 30.0*M[3,2,1,b,0] + 30.0*M[3,2,1,b,1] + 30.0*M[3,2,1,b,2]) :   0.0 :   True
+        (3, 2, 2) :   0.0 : Q[3,2,2] - (15.0*M[3,2,2,a,0] + 15.0*M[3,2,2,a,1] + 15.0*M[3,2,2,a,2] + 30.0*M[3,2,2,b,0] + 30.0*M[3,2,2,b,1] + 30.0*M[3,2,2,b,2]) :   0.0 :   True
+        (3, 2, 3) :   0.0 : Q[3,2,3] - (15.0*M[3,2,3,a,0] + 15.0*M[3,2,3,a,1] + 15.0*M[3,2,3,a,2] + 30.0*M[3,2,3,b,0] + 30.0*M[3,2,3,b,1] + 30.0*M[3,2,3,b,2]) :   0.0 :   True
+        (3, 2, 4) :   0.0 : Q[3,2,4] - (15.0*M[3,2,4,a,0] + 15.0*M[3,2,4,a,1] + 15.0*M[3,2,4,a,2] + 30.0*M[3,2,4,b,0] + 30.0*M[3,2,4,b,1] + 30.0*M[3,2,4,b,2]) :   0.0 :   True
+        (3, 2, 5) :   0.0 : Q[3,2,5] - (15.0*M[3,2,5,a,0] + 15.0*M[3,2,5,a,1] + 15.0*M[3,2,5,a,2] + 30.0*M[3,2,5,b,0] + 30.0*M[3,2,5,b,1] + 30.0*M[3,2,5,b,2]) :   0.0 :   True
+        (4, 0, 1) :   0.0 : Q[4,0,1] - (15.0*M[4,0,1,a,0] + 15.0*M[4,0,1,a,1] + 15.0*M[4,0,1,a,2] + 30.0*M[4,0,1,b,0] + 30.0*M[4,0,1,b,1] + 30.0*M[4,0,1,b,2]) :   0.0 :   True
+        (4, 0, 2) :   0.0 : Q[4,0,2] - (15.0*M[4,0,2,a,0] + 15.0*M[4,0,2,a,1] + 15.0*M[4,0,2,a,2] + 30.0*M[4,0,2,b,0] + 30.0*M[4,0,2,b,1] + 30.0*M[4,0,2,b,2]) :   0.0 :   True
+        (4, 0, 3) :   0.0 : Q[4,0,3] - (15.0*M[4,0,3,a,0] + 15.0*M[4,0,3,a,1] + 15.0*M[4,0,3,a,2] + 30.0*M[4,0,3,b,0] + 30.0*M[4,0,3,b,1] + 30.0*M[4,0,3,b,2]) :   0.0 :   True
+        (4, 0, 4) :   0.0 : Q[4,0,4] - (15.0*M[4,0,4,a,0] + 15.0*M[4,0,4,a,1] + 15.0*M[4,0,4,a,2] + 30.0*M[4,0,4,b,0] + 30.0*M[4,0,4,b,1] + 30.0*M[4,0,4,b,2]) :   0.0 :   True
+        (4, 0, 5) :   0.0 : Q[4,0,5] - (15.0*M[4,0,5,a,0] + 15.0*M[4,0,5,a,1] + 15.0*M[4,0,5,a,2] + 30.0*M[4,0,5,b,0] + 30.0*M[4,0,5,b,1] + 30.0*M[4,0,5,b,2]) :   0.0 :   True
+        (4, 1, 1) :   0.0 : Q[4,1,1] - (15.0*M[4,1,1,a,0] + 15.0*M[4,1,1,a,1] + 15.0*M[4,1,1,a,2] + 30.0*M[4,1,1,b,0] + 30.0*M[4,1,1,b,1] + 30.0*M[4,1,1,b,2]) :   0.0 :   True
+        (4, 1, 2) :   0.0 : Q[4,1,2] - (15.0*M[4,1,2,a,0] + 15.0*M[4,1,2,a,1] + 15.0*M[4,1,2,a,2] + 30.0*M[4,1,2,b,0] + 30.0*M[4,1,2,b,1] + 30.0*M[4,1,2,b,2]) :   0.0 :   True
+        (4, 1, 3) :   0.0 : Q[4,1,3] - (15.0*M[4,1,3,a,0] + 15.0*M[4,1,3,a,1] + 15.0*M[4,1,3,a,2] + 30.0*M[4,1,3,b,0] + 30.0*M[4,1,3,b,1] + 30.0*M[4,1,3,b,2]) :   0.0 :   True
+        (4, 1, 4) :   0.0 : Q[4,1,4] - (15.0*M[4,1,4,a,0] + 15.0*M[4,1,4,a,1] + 15.0*M[4,1,4,a,2] + 30.0*M[4,1,4,b,0] + 30.0*M[4,1,4,b,1] + 30.0*M[4,1,4,b,2]) :   0.0 :   True
+        (4, 1, 5) :   0.0 : Q[4,1,5] - (15.0*M[4,1,5,a,0] + 15.0*M[4,1,5,a,1] + 15.0*M[4,1,5,a,2] + 30.0*M[4,1,5,b,0] + 30.0*M[4,1,5,b,1] + 30.0*M[4,1,5,b,2]) :   0.0 :   True
+        (4, 2, 1) :   0.0 : Q[4,2,1] - (15.0*M[4,2,1,a,0] + 15.0*M[4,2,1,a,1] + 15.0*M[4,2,1,a,2] + 30.0*M[4,2,1,b,0] + 30.0*M[4,2,1,b,1] + 30.0*M[4,2,1,b,2]) :   0.0 :   True
+        (4, 2, 2) :   0.0 : Q[4,2,2] - (15.0*M[4,2,2,a,0] + 15.0*M[4,2,2,a,1] + 15.0*M[4,2,2,a,2] + 30.0*M[4,2,2,b,0] + 30.0*M[4,2,2,b,1] + 30.0*M[4,2,2,b,2]) :   0.0 :   True
+        (4, 2, 3) :   0.0 : Q[4,2,3] - (15.0*M[4,2,3,a,0] + 15.0*M[4,2,3,a,1] + 15.0*M[4,2,3,a,2] + 30.0*M[4,2,3,b,0] + 30.0*M[4,2,3,b,1] + 30.0*M[4,2,3,b,2]) :   0.0 :   True
+        (4, 2, 4) :   0.0 : Q[4,2,4] - (15.0*M[4,2,4,a,0] + 15.0*M[4,2,4,a,1] + 15.0*M[4,2,4,a,2] + 30.0*M[4,2,4,b,0] + 30.0*M[4,2,4,b,1] + 30.0*M[4,2,4,b,2]) :   0.0 :   True
+        (4, 2, 5) :   0.0 : Q[4,2,5] - (15.0*M[4,2,5,a,0] + 15.0*M[4,2,5,a,1] + 15.0*M[4,2,5,a,2] + 30.0*M[4,2,5,b,0] + 30.0*M[4,2,5,b,1] + 30.0*M[4,2,5,b,2]) :   0.0 :   True
+        (5, 0, 1) :   0.0 :                                                             Q[5,0,1] - (12.0*M[5,0,1,a,0] + 12.0*M[5,0,1,a,1] + 12.0*M[5,0,1,a,2]) :   0.0 :   True
+        (5, 0, 2) :   0.0 :                                                             Q[5,0,2] - (12.0*M[5,0,2,a,0] + 12.0*M[5,0,2,a,1] + 12.0*M[5,0,2,a,2]) :   0.0 :   True
+        (5, 0, 3) :   0.0 :                                                             Q[5,0,3] - (12.0*M[5,0,3,a,0] + 12.0*M[5,0,3,a,1] + 12.0*M[5,0,3,a,2]) :   0.0 :   True
+        (5, 0, 4) :   0.0 :                                                             Q[5,0,4] - (12.0*M[5,0,4,a,0] + 12.0*M[5,0,4,a,1] + 12.0*M[5,0,4,a,2]) :   0.0 :   True
+        (5, 0, 5) :   0.0 :                                                             Q[5,0,5] - (12.0*M[5,0,5,a,0] + 12.0*M[5,0,5,a,1] + 12.0*M[5,0,5,a,2]) :   0.0 :   True
+        (5, 1, 1) :   0.0 :                                                             Q[5,1,1] - (12.0*M[5,1,1,a,0] + 12.0*M[5,1,1,a,1] + 12.0*M[5,1,1,a,2]) :   0.0 :   True
+        (5, 1, 2) :   0.0 :                                                             Q[5,1,2] - (12.0*M[5,1,2,a,0] + 12.0*M[5,1,2,a,1] + 12.0*M[5,1,2,a,2]) :   0.0 :   True
+        (5, 1, 3) :   0.0 :                                                             Q[5,1,3] - (12.0*M[5,1,3,a,0] + 12.0*M[5,1,3,a,1] + 12.0*M[5,1,3,a,2]) :   0.0 :   True
+        (5, 1, 4) :   0.0 :                                                             Q[5,1,4] - (12.0*M[5,1,4,a,0] + 12.0*M[5,1,4,a,1] + 12.0*M[5,1,4,a,2]) :   0.0 :   True
+        (5, 1, 5) :   0.0 :                                                             Q[5,1,5] - (12.0*M[5,1,5,a,0] + 12.0*M[5,1,5,a,1] + 12.0*M[5,1,5,a,2]) :   0.0 :   True
+        (5, 2, 1) :   0.0 :                                                             Q[5,2,1] - (12.0*M[5,2,1,a,0] + 12.0*M[5,2,1,a,1] + 12.0*M[5,2,1,a,2]) :   0.0 :   True
+        (5, 2, 2) :   0.0 :                                                             Q[5,2,2] - (12.0*M[5,2,2,a,0] + 12.0*M[5,2,2,a,1] + 12.0*M[5,2,2,a,2]) :   0.0 :   True
+        (5, 2, 3) :   0.0 :                                                             Q[5,2,3] - (12.0*M[5,2,3,a,0] + 12.0*M[5,2,3,a,1] + 12.0*M[5,2,3,a,2]) :   0.0 :   True
+        (5, 2, 4) :   0.0 :                                                             Q[5,2,4] - (12.0*M[5,2,4,a,0] + 12.0*M[5,2,4,a,1] + 12.0*M[5,2,4,a,2]) :   0.0 :   True
+        (5, 2, 5) :   0.0 :                                                             Q[5,2,5] - (12.0*M[5,2,5,a,0] + 12.0*M[5,2,5,a,1] + 12.0*M[5,2,5,a,2]) :   0.0 :   True
+    V_rule : Size=45, Index=V_rule_index, Active=True
+        Key       : Lower : Body                                             : Upper : Active
+        (0, 1, 0) :  -Inf : 1600*V[0,a,0,1] + 1600*V[0,b,0,1] - 13600*Y[0,1] :   0.0 :   True
+        (0, 1, 1) :  -Inf : 1600*V[0,a,1,1] + 1600*V[0,b,1,1] - 13600*Y[0,1] :   0.0 :   True
+        (0, 1, 2) :  -Inf : 1600*V[0,a,2,1] + 1600*V[0,b,2,1] - 13600*Y[0,1] :   0.0 :   True
+        (0, 2, 0) :  -Inf : 1600*V[0,a,0,2] + 1600*V[0,b,0,2] - 13600*Y[0,2] :   0.0 :   True
+        (0, 2, 1) :  -Inf : 1600*V[0,a,1,2] + 1600*V[0,b,1,2] - 13600*Y[0,2] :   0.0 :   True
+        (0, 2, 2) :  -Inf : 1600*V[0,a,2,2] + 1600*V[0,b,2,2] - 13600*Y[0,2] :   0.0 :   True
+        (0, 3, 0) :  -Inf : 1600*V[0,a,0,3] + 1600*V[0,b,0,3] - 13600*Y[0,3] :   0.0 :   True
+        (0, 3, 1) :  -Inf : 1600*V[0,a,1,3] + 1600*V[0,b,1,3] - 13600*Y[0,3] :   0.0 :   True
+        (0, 3, 2) :  -Inf : 1600*V[0,a,2,3] + 1600*V[0,b,2,3] - 13600*Y[0,3] :   0.0 :   True
+        (0, 4, 0) :  -Inf : 1600*V[0,a,0,4] + 1600*V[0,b,0,4] - 13600*Y[0,4] :   0.0 :   True
+        (0, 4, 1) :  -Inf : 1600*V[0,a,1,4] + 1600*V[0,b,1,4] - 13600*Y[0,4] :   0.0 :   True
+        (0, 4, 2) :  -Inf : 1600*V[0,a,2,4] + 1600*V[0,b,2,4] - 13600*Y[0,4] :   0.0 :   True
+        (0, 5, 0) :  -Inf : 1600*V[0,a,0,5] + 1600*V[0,b,0,5] - 13600*Y[0,5] :   0.0 :   True
+        (0, 5, 1) :  -Inf : 1600*V[0,a,1,5] + 1600*V[0,b,1,5] - 13600*Y[0,5] :   0.0 :   True
+        (0, 5, 2) :  -Inf : 1600*V[0,a,2,5] + 1600*V[0,b,2,5] - 13600*Y[0,5] :   0.0 :   True
+        (1, 1, 0) :  -Inf : 1600*V[1,a,0,1] + 1600*V[1,b,0,1] - 13600*Y[1,1] :   0.0 :   True
+        (1, 1, 1) :  -Inf : 1600*V[1,a,1,1] + 1600*V[1,b,1,1] - 13600*Y[1,1] :   0.0 :   True
+        (1, 1, 2) :  -Inf : 1600*V[1,a,2,1] + 1600*V[1,b,2,1] - 13600*Y[1,1] :   0.0 :   True
+        (1, 2, 0) :  -Inf : 1600*V[1,a,0,2] + 1600*V[1,b,0,2] - 13600*Y[1,2] :   0.0 :   True
+        (1, 2, 1) :  -Inf : 1600*V[1,a,1,2] + 1600*V[1,b,1,2] - 13600*Y[1,2] :   0.0 :   True
+        (1, 2, 2) :  -Inf : 1600*V[1,a,2,2] + 1600*V[1,b,2,2] - 13600*Y[1,2] :   0.0 :   True
+        (1, 3, 0) :  -Inf : 1600*V[1,a,0,3] + 1600*V[1,b,0,3] - 13600*Y[1,3] :   0.0 :   True
+        (1, 3, 1) :  -Inf : 1600*V[1,a,1,3] + 1600*V[1,b,1,3] - 13600*Y[1,3] :   0.0 :   True
+        (1, 3, 2) :  -Inf : 1600*V[1,a,2,3] + 1600*V[1,b,2,3] - 13600*Y[1,3] :   0.0 :   True
+        (1, 4, 0) :  -Inf : 1600*V[1,a,0,4] + 1600*V[1,b,0,4] - 13600*Y[1,4] :   0.0 :   True
+        (1, 4, 1) :  -Inf : 1600*V[1,a,1,4] + 1600*V[1,b,1,4] - 13600*Y[1,4] :   0.0 :   True
+        (1, 4, 2) :  -Inf : 1600*V[1,a,2,4] + 1600*V[1,b,2,4] - 13600*Y[1,4] :   0.0 :   True
+        (1, 5, 0) :  -Inf : 1600*V[1,a,0,5] + 1600*V[1,b,0,5] - 13600*Y[1,5] :   0.0 :   True
+        (1, 5, 1) :  -Inf : 1600*V[1,a,1,5] + 1600*V[1,b,1,5] - 13600*Y[1,5] :   0.0 :   True
+        (1, 5, 2) :  -Inf : 1600*V[1,a,2,5] + 1600*V[1,b,2,5] - 13600*Y[1,5] :   0.0 :   True
+        (2, 1, 0) :  -Inf : 1600*V[2,a,0,1] + 1600*V[2,b,0,1] - 13600*Y[2,1] :   0.0 :   True
+        (2, 1, 1) :  -Inf : 1600*V[2,a,1,1] + 1600*V[2,b,1,1] - 13600*Y[2,1] :   0.0 :   True
+        (2, 1, 2) :  -Inf : 1600*V[2,a,2,1] + 1600*V[2,b,2,1] - 13600*Y[2,1] :   0.0 :   True
+        (2, 2, 0) :  -Inf : 1600*V[2,a,0,2] + 1600*V[2,b,0,2] - 13600*Y[2,2] :   0.0 :   True
+        (2, 2, 1) :  -Inf : 1600*V[2,a,1,2] + 1600*V[2,b,1,2] - 13600*Y[2,2] :   0.0 :   True
+        (2, 2, 2) :  -Inf : 1600*V[2,a,2,2] + 1600*V[2,b,2,2] - 13600*Y[2,2] :   0.0 :   True
+        (2, 3, 0) :  -Inf : 1600*V[2,a,0,3] + 1600*V[2,b,0,3] - 13600*Y[2,3] :   0.0 :   True
+        (2, 3, 1) :  -Inf : 1600*V[2,a,1,3] + 1600*V[2,b,1,3] - 13600*Y[2,3] :   0.0 :   True
+        (2, 3, 2) :  -Inf : 1600*V[2,a,2,3] + 1600*V[2,b,2,3] - 13600*Y[2,3] :   0.0 :   True
+        (2, 4, 0) :  -Inf : 1600*V[2,a,0,4] + 1600*V[2,b,0,4] - 13600*Y[2,4] :   0.0 :   True
+        (2, 4, 1) :  -Inf : 1600*V[2,a,1,4] + 1600*V[2,b,1,4] - 13600*Y[2,4] :   0.0 :   True
+        (2, 4, 2) :  -Inf : 1600*V[2,a,2,4] + 1600*V[2,b,2,4] - 13600*Y[2,4] :   0.0 :   True
+        (2, 5, 0) :  -Inf : 1600*V[2,a,0,5] + 1600*V[2,b,0,5] - 13600*Y[2,5] :   0.0 :   True
+        (2, 5, 1) :  -Inf : 1600*V[2,a,1,5] + 1600*V[2,b,1,5] - 13600*Y[2,5] :   0.0 :   True
+        (2, 5, 2) :  -Inf : 1600*V[2,a,2,5] + 1600*V[2,b,2,5] - 13600*Y[2,5] :   0.0 :   True
+    X2_rule : Size=45, Index=X2_rule_index, Active=True
+        Key       : Lower : Body                   : Upper : Active
+        (0, 0, 1) :  -Inf : X[0,0,1200,1] - Y[0,1] :   0.0 :   True
+        (0, 0, 2) :  -Inf : X[0,0,1200,2] - Y[0,2] :   0.0 :   True
+        (0, 0, 3) :  -Inf : X[0,0,1200,3] - Y[0,3] :   0.0 :   True
+        (0, 0, 4) :  -Inf : X[0,0,1200,4] - Y[0,4] :   0.0 :   True
+        (0, 0, 5) :  -Inf : X[0,0,1200,5] - Y[0,5] :   0.0 :   True
+        (0, 1, 1) :  -Inf : X[0,1,1200,1] - Y[0,1] :   0.0 :   True
+        (0, 1, 2) :  -Inf : X[0,1,1200,2] - Y[0,2] :   0.0 :   True
+        (0, 1, 3) :  -Inf : X[0,1,1200,3] - Y[0,3] :   0.0 :   True
+        (0, 1, 4) :  -Inf : X[0,1,1200,4] - Y[0,4] :   0.0 :   True
+        (0, 1, 5) :  -Inf : X[0,1,1200,5] - Y[0,5] :   0.0 :   True
+        (0, 2, 1) :  -Inf : X[0,2,1200,1] - Y[0,1] :   0.0 :   True
+        (0, 2, 2) :  -Inf : X[0,2,1200,2] - Y[0,2] :   0.0 :   True
+        (0, 2, 3) :  -Inf : X[0,2,1200,3] - Y[0,3] :   0.0 :   True
+        (0, 2, 4) :  -Inf : X[0,2,1200,4] - Y[0,4] :   0.0 :   True
+        (0, 2, 5) :  -Inf : X[0,2,1200,5] - Y[0,5] :   0.0 :   True
+        (1, 0, 1) :  -Inf : X[1,0,1200,1] - Y[1,1] :   0.0 :   True
+        (1, 0, 2) :  -Inf : X[1,0,1200,2] - Y[1,2] :   0.0 :   True
+        (1, 0, 3) :  -Inf : X[1,0,1200,3] - Y[1,3] :   0.0 :   True
+        (1, 0, 4) :  -Inf : X[1,0,1200,4] - Y[1,4] :   0.0 :   True
+        (1, 0, 5) :  -Inf : X[1,0,1200,5] - Y[1,5] :   0.0 :   True
+        (1, 1, 1) :  -Inf : X[1,1,1200,1] - Y[1,1] :   0.0 :   True
+        (1, 1, 2) :  -Inf : X[1,1,1200,2] - Y[1,2] :   0.0 :   True
+        (1, 1, 3) :  -Inf : X[1,1,1200,3] - Y[1,3] :   0.0 :   True
+        (1, 1, 4) :  -Inf : X[1,1,1200,4] - Y[1,4] :   0.0 :   True
+        (1, 1, 5) :  -Inf : X[1,1,1200,5] - Y[1,5] :   0.0 :   True
+        (1, 2, 1) :  -Inf : X[1,2,1200,1] - Y[1,1] :   0.0 :   True
+        (1, 2, 2) :  -Inf : X[1,2,1200,2] - Y[1,2] :   0.0 :   True
+        (1, 2, 3) :  -Inf : X[1,2,1200,3] - Y[1,3] :   0.0 :   True
+        (1, 2, 4) :  -Inf : X[1,2,1200,4] - Y[1,4] :   0.0 :   True
+        (1, 2, 5) :  -Inf : X[1,2,1200,5] - Y[1,5] :   0.0 :   True
+        (2, 0, 1) :  -Inf : X[2,0,1200,1] - Y[2,1] :   0.0 :   True
+        (2, 0, 2) :  -Inf : X[2,0,1200,2] - Y[2,2] :   0.0 :   True
+        (2, 0, 3) :  -Inf : X[2,0,1200,3] - Y[2,3] :   0.0 :   True
+        (2, 0, 4) :  -Inf : X[2,0,1200,4] - Y[2,4] :   0.0 :   True
+        (2, 0, 5) :  -Inf : X[2,0,1200,5] - Y[2,5] :   0.0 :   True
+        (2, 1, 1) :  -Inf : X[2,1,1200,1] - Y[2,1] :   0.0 :   True
+        (2, 1, 2) :  -Inf : X[2,1,1200,2] - Y[2,2] :   0.0 :   True
+        (2, 1, 3) :  -Inf : X[2,1,1200,3] - Y[2,3] :   0.0 :   True
+        (2, 1, 4) :  -Inf : X[2,1,1200,4] - Y[2,4] :   0.0 :   True
+        (2, 1, 5) :  -Inf : X[2,1,1200,5] - Y[2,5] :   0.0 :   True
+        (2, 2, 1) :  -Inf : X[2,2,1200,1] - Y[2,1] :   0.0 :   True
+        (2, 2, 2) :  -Inf : X[2,2,1200,2] - Y[2,2] :   0.0 :   True
+        (2, 2, 3) :  -Inf : X[2,2,1200,3] - Y[2,3] :   0.0 :   True
+        (2, 2, 4) :  -Inf : X[2,2,1200,4] - Y[2,4] :   0.0 :   True
+        (2, 2, 5) :  -Inf : X[2,2,1200,5] - Y[2,5] :   0.0 :   True
+    X3_rule : Size=15, Index=X3_rule_index, Active=True
+        Key    : Lower : Body                                                         : Upper  : Active
+        (0, 1) :  -Inf : 1200*X[0,0,1200,1] + 1200*X[0,1,1200,1] + 1200*X[0,2,1200,1] : 2400.0 :   True
+        (0, 2) :  -Inf : 1200*X[0,0,1200,2] + 1200*X[0,1,1200,2] + 1200*X[0,2,1200,2] : 2400.0 :   True
+        (0, 3) :  -Inf : 1200*X[0,0,1200,3] + 1200*X[0,1,1200,3] + 1200*X[0,2,1200,3] : 2400.0 :   True
+        (0, 4) :  -Inf : 1200*X[0,0,1200,4] + 1200*X[0,1,1200,4] + 1200*X[0,2,1200,4] : 2400.0 :   True
+        (0, 5) :  -Inf : 1200*X[0,0,1200,5] + 1200*X[0,1,1200,5] + 1200*X[0,2,1200,5] : 2400.0 :   True
+        (1, 1) :  -Inf : 1200*X[1,0,1200,1] + 1200*X[1,1,1200,1] + 1200*X[1,2,1200,1] : 2400.0 :   True
+        (1, 2) :  -Inf : 1200*X[1,0,1200,2] + 1200*X[1,1,1200,2] + 1200*X[1,2,1200,2] : 2400.0 :   True
+        (1, 3) :  -Inf : 1200*X[1,0,1200,3] + 1200*X[1,1,1200,3] + 1200*X[1,2,1200,3] : 2400.0 :   True
+        (1, 4) :  -Inf : 1200*X[1,0,1200,4] + 1200*X[1,1,1200,4] + 1200*X[1,2,1200,4] : 2400.0 :   True
+        (1, 5) :  -Inf : 1200*X[1,0,1200,5] + 1200*X[1,1,1200,5] + 1200*X[1,2,1200,5] : 2400.0 :   True
+        (2, 1) :  -Inf : 1200*X[2,0,1200,1] + 1200*X[2,1,1200,1] + 1200*X[2,2,1200,1] : 2400.0 :   True
+        (2, 2) :  -Inf : 1200*X[2,0,1200,2] + 1200*X[2,1,1200,2] + 1200*X[2,2,1200,2] : 2400.0 :   True
+        (2, 3) :  -Inf : 1200*X[2,0,1200,3] + 1200*X[2,1,1200,3] + 1200*X[2,2,1200,3] : 2400.0 :   True
+        (2, 4) :  -Inf : 1200*X[2,0,1200,4] + 1200*X[2,1,1200,4] + 1200*X[2,2,1200,4] : 2400.0 :   True
+        (2, 5) :  -Inf : 1200*X[2,0,1200,5] + 1200*X[2,1,1200,5] + 1200*X[2,2,1200,5] : 2400.0 :   True
+    X4_rule : Size=30, Index=X4_rule_index, Active=True
+        Key       : Lower : Body                          : Upper : Active
+        (0, 0, 1) :  -Inf : X[0,1,1200,1] - X[0,0,1200,1] :   0.0 :   True
+        (0, 0, 2) :  -Inf : X[0,1,1200,2] - X[0,0,1200,2] :   0.0 :   True
+        (0, 0, 3) :  -Inf : X[0,1,1200,3] - X[0,0,1200,3] :   0.0 :   True
+        (0, 0, 4) :  -Inf : X[0,1,1200,4] - X[0,0,1200,4] :   0.0 :   True
+        (0, 0, 5) :  -Inf : X[0,1,1200,5] - X[0,0,1200,5] :   0.0 :   True
+        (0, 1, 1) :  -Inf : X[0,2,1200,1] - X[0,1,1200,1] :   0.0 :   True
+        (0, 1, 2) :  -Inf : X[0,2,1200,2] - X[0,1,1200,2] :   0.0 :   True
+        (0, 1, 3) :  -Inf : X[0,2,1200,3] - X[0,1,1200,3] :   0.0 :   True
+        (0, 1, 4) :  -Inf : X[0,2,1200,4] - X[0,1,1200,4] :   0.0 :   True
+        (0, 1, 5) :  -Inf : X[0,2,1200,5] - X[0,1,1200,5] :   0.0 :   True
+        (1, 0, 1) :  -Inf : X[1,1,1200,1] - X[1,0,1200,1] :   0.0 :   True
+        (1, 0, 2) :  -Inf : X[1,1,1200,2] - X[1,0,1200,2] :   0.0 :   True
+        (1, 0, 3) :  -Inf : X[1,1,1200,3] - X[1,0,1200,3] :   0.0 :   True
+        (1, 0, 4) :  -Inf : X[1,1,1200,4] - X[1,0,1200,4] :   0.0 :   True
+        (1, 0, 5) :  -Inf : X[1,1,1200,5] - X[1,0,1200,5] :   0.0 :   True
+        (1, 1, 1) :  -Inf : X[1,2,1200,1] - X[1,1,1200,1] :   0.0 :   True
+        (1, 1, 2) :  -Inf : X[1,2,1200,2] - X[1,1,1200,2] :   0.0 :   True
+        (1, 1, 3) :  -Inf : X[1,2,1200,3] - X[1,1,1200,3] :   0.0 :   True
+        (1, 1, 4) :  -Inf : X[1,2,1200,4] - X[1,1,1200,4] :   0.0 :   True
+        (1, 1, 5) :  -Inf : X[1,2,1200,5] - X[1,1,1200,5] :   0.0 :   True
+        (2, 0, 1) :  -Inf : X[2,1,1200,1] - X[2,0,1200,1] :   0.0 :   True
+        (2, 0, 2) :  -Inf : X[2,1,1200,2] - X[2,0,1200,2] :   0.0 :   True
+        (2, 0, 3) :  -Inf : X[2,1,1200,3] - X[2,0,1200,3] :   0.0 :   True
+        (2, 0, 4) :  -Inf : X[2,1,1200,4] - X[2,0,1200,4] :   0.0 :   True
+        (2, 0, 5) :  -Inf : X[2,1,1200,5] - X[2,0,1200,5] :   0.0 :   True
+        (2, 1, 1) :  -Inf : X[2,2,1200,1] - X[2,1,1200,1] :   0.0 :   True
+        (2, 1, 2) :  -Inf : X[2,2,1200,2] - X[2,1,1200,2] :   0.0 :   True
+        (2, 1, 3) :  -Inf : X[2,2,1200,3] - X[2,1,1200,3] :   0.0 :   True
+        (2, 1, 4) :  -Inf : X[2,2,1200,4] - X[2,1,1200,4] :   0.0 :   True
+        (2, 1, 5) :  -Inf : X[2,2,1200,5] - X[2,1,1200,5] :   0.0 :   True
+    X_rule : Size=45, Index=X_rule_index, Active=True
+        Key             : Lower : Body                                       : Upper : Active
+        (0, 0, 1200, 1) :  -Inf : V[0,a,0,1] + V[0,b,0,1] - 68*X[0,0,1200,1] :   0.0 :   True
+        (0, 0, 1200, 2) :  -Inf : V[0,a,0,2] + V[0,b,0,2] - 68*X[0,0,1200,2] :   0.0 :   True
+        (0, 0, 1200, 3) :  -Inf : V[0,a,0,3] + V[0,b,0,3] - 68*X[0,0,1200,3] :   0.0 :   True
+        (0, 0, 1200, 4) :  -Inf : V[0,a,0,4] + V[0,b,0,4] - 68*X[0,0,1200,4] :   0.0 :   True
+        (0, 0, 1200, 5) :  -Inf : V[0,a,0,5] + V[0,b,0,5] - 68*X[0,0,1200,5] :   0.0 :   True
+        (0, 1, 1200, 1) :  -Inf : V[0,a,1,1] + V[0,b,1,1] - 68*X[0,1,1200,1] :   0.0 :   True
+        (0, 1, 1200, 2) :  -Inf : V[0,a,1,2] + V[0,b,1,2] - 68*X[0,1,1200,2] :   0.0 :   True
+        (0, 1, 1200, 3) :  -Inf : V[0,a,1,3] + V[0,b,1,3] - 68*X[0,1,1200,3] :   0.0 :   True
+        (0, 1, 1200, 4) :  -Inf : V[0,a,1,4] + V[0,b,1,4] - 68*X[0,1,1200,4] :   0.0 :   True
+        (0, 1, 1200, 5) :  -Inf : V[0,a,1,5] + V[0,b,1,5] - 68*X[0,1,1200,5] :   0.0 :   True
+        (0, 2, 1200, 1) :  -Inf : V[0,a,2,1] + V[0,b,2,1] - 68*X[0,2,1200,1] :   0.0 :   True
+        (0, 2, 1200, 2) :  -Inf : V[0,a,2,2] + V[0,b,2,2] - 68*X[0,2,1200,2] :   0.0 :   True
+        (0, 2, 1200, 3) :  -Inf : V[0,a,2,3] + V[0,b,2,3] - 68*X[0,2,1200,3] :   0.0 :   True
+        (0, 2, 1200, 4) :  -Inf : V[0,a,2,4] + V[0,b,2,4] - 68*X[0,2,1200,4] :   0.0 :   True
+        (0, 2, 1200, 5) :  -Inf : V[0,a,2,5] + V[0,b,2,5] - 68*X[0,2,1200,5] :   0.0 :   True
+        (1, 0, 1200, 1) :  -Inf : V[1,a,0,1] + V[1,b,0,1] - 68*X[1,0,1200,1] :   0.0 :   True
+        (1, 0, 1200, 2) :  -Inf : V[1,a,0,2] + V[1,b,0,2] - 68*X[1,0,1200,2] :   0.0 :   True
+        (1, 0, 1200, 3) :  -Inf : V[1,a,0,3] + V[1,b,0,3] - 68*X[1,0,1200,3] :   0.0 :   True
+        (1, 0, 1200, 4) :  -Inf : V[1,a,0,4] + V[1,b,0,4] - 68*X[1,0,1200,4] :   0.0 :   True
+        (1, 0, 1200, 5) :  -Inf : V[1,a,0,5] + V[1,b,0,5] - 68*X[1,0,1200,5] :   0.0 :   True
+        (1, 1, 1200, 1) :  -Inf : V[1,a,1,1] + V[1,b,1,1] - 68*X[1,1,1200,1] :   0.0 :   True
+        (1, 1, 1200, 2) :  -Inf : V[1,a,1,2] + V[1,b,1,2] - 68*X[1,1,1200,2] :   0.0 :   True
+        (1, 1, 1200, 3) :  -Inf : V[1,a,1,3] + V[1,b,1,3] - 68*X[1,1,1200,3] :   0.0 :   True
+        (1, 1, 1200, 4) :  -Inf : V[1,a,1,4] + V[1,b,1,4] - 68*X[1,1,1200,4] :   0.0 :   True
+        (1, 1, 1200, 5) :  -Inf : V[1,a,1,5] + V[1,b,1,5] - 68*X[1,1,1200,5] :   0.0 :   True
+        (1, 2, 1200, 1) :  -Inf : V[1,a,2,1] + V[1,b,2,1] - 68*X[1,2,1200,1] :   0.0 :   True
+        (1, 2, 1200, 2) :  -Inf : V[1,a,2,2] + V[1,b,2,2] - 68*X[1,2,1200,2] :   0.0 :   True
+        (1, 2, 1200, 3) :  -Inf : V[1,a,2,3] + V[1,b,2,3] - 68*X[1,2,1200,3] :   0.0 :   True
+        (1, 2, 1200, 4) :  -Inf : V[1,a,2,4] + V[1,b,2,4] - 68*X[1,2,1200,4] :   0.0 :   True
+        (1, 2, 1200, 5) :  -Inf : V[1,a,2,5] + V[1,b,2,5] - 68*X[1,2,1200,5] :   0.0 :   True
+        (2, 0, 1200, 1) :  -Inf : V[2,a,0,1] + V[2,b,0,1] - 68*X[2,0,1200,1] :   0.0 :   True
+        (2, 0, 1200, 2) :  -Inf : V[2,a,0,2] + V[2,b,0,2] - 68*X[2,0,1200,2] :   0.0 :   True
+        (2, 0, 1200, 3) :  -Inf : V[2,a,0,3] + V[2,b,0,3] - 68*X[2,0,1200,3] :   0.0 :   True
+        (2, 0, 1200, 4) :  -Inf : V[2,a,0,4] + V[2,b,0,4] - 68*X[2,0,1200,4] :   0.0 :   True
+        (2, 0, 1200, 5) :  -Inf : V[2,a,0,5] + V[2,b,0,5] - 68*X[2,0,1200,5] :   0.0 :   True
+        (2, 1, 1200, 1) :  -Inf : V[2,a,1,1] + V[2,b,1,1] - 68*X[2,1,1200,1] :   0.0 :   True
+        (2, 1, 1200, 2) :  -Inf : V[2,a,1,2] + V[2,b,1,2] - 68*X[2,1,1200,2] :   0.0 :   True
+        (2, 1, 1200, 3) :  -Inf : V[2,a,1,3] + V[2,b,1,3] - 68*X[2,1,1200,3] :   0.0 :   True
+        (2, 1, 1200, 4) :  -Inf : V[2,a,1,4] + V[2,b,1,4] - 68*X[2,1,1200,4] :   0.0 :   True
+        (2, 1, 1200, 5) :  -Inf : V[2,a,1,5] + V[2,b,1,5] - 68*X[2,1,1200,5] :   0.0 :   True
+        (2, 2, 1200, 1) :  -Inf : V[2,a,2,1] + V[2,b,2,1] - 68*X[2,2,1200,1] :   0.0 :   True
+        (2, 2, 1200, 2) :  -Inf : V[2,a,2,2] + V[2,b,2,2] - 68*X[2,2,1200,2] :   0.0 :   True
+        (2, 2, 1200, 3) :  -Inf : V[2,a,2,3] + V[2,b,2,3] - 68*X[2,2,1200,3] :   0.0 :   True
+        (2, 2, 1200, 4) :  -Inf : V[2,a,2,4] + V[2,b,2,4] - 68*X[2,2,1200,4] :   0.0 :   True
+        (2, 2, 1200, 5) :  -Inf : V[2,a,2,5] + V[2,b,2,5] - 68*X[2,2,1200,5] :   0.0 :   True
+    Y2_rule : Size=10, Index=Y2_rule_index, Active=True
+        Key    : Lower : Body            : Upper : Active
+        (0, 1) :  -Inf : Y[1,1] - Y[0,1] :   0.0 :   True
+        (0, 2) :  -Inf : Y[1,2] - Y[0,2] :   0.0 :   True
+        (0, 3) :  -Inf : Y[1,3] - Y[0,3] :   0.0 :   True
+        (0, 4) :  -Inf : Y[1,4] - Y[0,4] :   0.0 :   True
+        (0, 5) :  -Inf : Y[1,5] - Y[0,5] :   0.0 :   True
+        (1, 1) :  -Inf : Y[2,1] - Y[1,1] :   0.0 :   True
+        (1, 2) :  -Inf : Y[2,2] - Y[1,2] :   0.0 :   True
+        (1, 3) :  -Inf : Y[2,3] - Y[1,3] :   0.0 :   True
+        (1, 4) :  -Inf : Y[2,4] - Y[1,4] :   0.0 :   True
+        (1, 5) :  -Inf : Y[2,5] - Y[1,5] :   0.0 :   True
+    Y_rule : Size=15, Index=Y_rule_index, Active=True
+        Key    : Lower : Body                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             : Upper : Active
+        (0, 1) :  -Inf : 88128000000*Y[0,1] - (1440000000*M[1,0,1,a,0] + 1440000000*M[1,0,1,a,1] + 1440000000*M[1,0,1,a,2] + 1440000000*M[1,0,1,b,0] + 1440000000*M[1,0,1,b,1] + 1440000000*M[1,0,1,b,2] + 1440000000*M[2,0,1,a,0] + 1440000000*M[2,0,1,a,1] + 1440000000*M[2,0,1,a,2] + 1440000000*M[2,0,1,b,0] + 1440000000*M[2,0,1,b,1] + 1440000000*M[2,0,1,b,2] + 1440000000*M[3,0,1,a,0] + 1440000000*M[3,0,1,a,1] + 1440000000*M[3,0,1,a,2] + 1440000000*M[3,0,1,b,0] + 1440000000*M[3,0,1,b,1] + 1440000000*M[3,0,1,b,2] + 1440000000*M[4,0,1,a,0] + 1440000000*M[4,0,1,a,1] + 1440000000*M[4,0,1,a,2] + 1440000000*M[4,0,1,b,0] + 1440000000*M[4,0,1,b,1] + 1440000000*M[4,0,1,b,2] + 1440000000*M[5,0,1,a,0] + 1440000000*M[5,0,1,a,1] + 1440000000*M[5,0,1,a,2] + 1440000000*M[5,0,1,b,0] + 1440000000*M[5,0,1,b,1] + 1440000000*M[5,0,1,b,2]) :   0.0 :   True
+        (0, 2) :  -Inf : 88128000000*Y[0,2] - (1440000000*M[1,0,2,a,0] + 1440000000*M[1,0,2,a,1] + 1440000000*M[1,0,2,a,2] + 1440000000*M[1,0,2,b,0] + 1440000000*M[1,0,2,b,1] + 1440000000*M[1,0,2,b,2] + 1440000000*M[2,0,2,a,0] + 1440000000*M[2,0,2,a,1] + 1440000000*M[2,0,2,a,2] + 1440000000*M[2,0,2,b,0] + 1440000000*M[2,0,2,b,1] + 1440000000*M[2,0,2,b,2] + 1440000000*M[3,0,2,a,0] + 1440000000*M[3,0,2,a,1] + 1440000000*M[3,0,2,a,2] + 1440000000*M[3,0,2,b,0] + 1440000000*M[3,0,2,b,1] + 1440000000*M[3,0,2,b,2] + 1440000000*M[4,0,2,a,0] + 1440000000*M[4,0,2,a,1] + 1440000000*M[4,0,2,a,2] + 1440000000*M[4,0,2,b,0] + 1440000000*M[4,0,2,b,1] + 1440000000*M[4,0,2,b,2] + 1440000000*M[5,0,2,a,0] + 1440000000*M[5,0,2,a,1] + 1440000000*M[5,0,2,a,2] + 1440000000*M[5,0,2,b,0] + 1440000000*M[5,0,2,b,1] + 1440000000*M[5,0,2,b,2]) :   0.0 :   True
+        (0, 3) :  -Inf : 88128000000*Y[0,3] - (1440000000*M[1,0,3,a,0] + 1440000000*M[1,0,3,a,1] + 1440000000*M[1,0,3,a,2] + 1440000000*M[1,0,3,b,0] + 1440000000*M[1,0,3,b,1] + 1440000000*M[1,0,3,b,2] + 1440000000*M[2,0,3,a,0] + 1440000000*M[2,0,3,a,1] + 1440000000*M[2,0,3,a,2] + 1440000000*M[2,0,3,b,0] + 1440000000*M[2,0,3,b,1] + 1440000000*M[2,0,3,b,2] + 1440000000*M[3,0,3,a,0] + 1440000000*M[3,0,3,a,1] + 1440000000*M[3,0,3,a,2] + 1440000000*M[3,0,3,b,0] + 1440000000*M[3,0,3,b,1] + 1440000000*M[3,0,3,b,2] + 1440000000*M[4,0,3,a,0] + 1440000000*M[4,0,3,a,1] + 1440000000*M[4,0,3,a,2] + 1440000000*M[4,0,3,b,0] + 1440000000*M[4,0,3,b,1] + 1440000000*M[4,0,3,b,2] + 1440000000*M[5,0,3,a,0] + 1440000000*M[5,0,3,a,1] + 1440000000*M[5,0,3,a,2] + 1440000000*M[5,0,3,b,0] + 1440000000*M[5,0,3,b,1] + 1440000000*M[5,0,3,b,2]) :   0.0 :   True
+        (0, 4) :  -Inf : 88128000000*Y[0,4] - (1440000000*M[1,0,4,a,0] + 1440000000*M[1,0,4,a,1] + 1440000000*M[1,0,4,a,2] + 1440000000*M[1,0,4,b,0] + 1440000000*M[1,0,4,b,1] + 1440000000*M[1,0,4,b,2] + 1440000000*M[2,0,4,a,0] + 1440000000*M[2,0,4,a,1] + 1440000000*M[2,0,4,a,2] + 1440000000*M[2,0,4,b,0] + 1440000000*M[2,0,4,b,1] + 1440000000*M[2,0,4,b,2] + 1440000000*M[3,0,4,a,0] + 1440000000*M[3,0,4,a,1] + 1440000000*M[3,0,4,a,2] + 1440000000*M[3,0,4,b,0] + 1440000000*M[3,0,4,b,1] + 1440000000*M[3,0,4,b,2] + 1440000000*M[4,0,4,a,0] + 1440000000*M[4,0,4,a,1] + 1440000000*M[4,0,4,a,2] + 1440000000*M[4,0,4,b,0] + 1440000000*M[4,0,4,b,1] + 1440000000*M[4,0,4,b,2] + 1440000000*M[5,0,4,a,0] + 1440000000*M[5,0,4,a,1] + 1440000000*M[5,0,4,a,2] + 1440000000*M[5,0,4,b,0] + 1440000000*M[5,0,4,b,1] + 1440000000*M[5,0,4,b,2]) :   0.0 :   True
+        (0, 5) :  -Inf : 88128000000*Y[0,5] - (1440000000*M[1,0,5,a,0] + 1440000000*M[1,0,5,a,1] + 1440000000*M[1,0,5,a,2] + 1440000000*M[1,0,5,b,0] + 1440000000*M[1,0,5,b,1] + 1440000000*M[1,0,5,b,2] + 1440000000*M[2,0,5,a,0] + 1440000000*M[2,0,5,a,1] + 1440000000*M[2,0,5,a,2] + 1440000000*M[2,0,5,b,0] + 1440000000*M[2,0,5,b,1] + 1440000000*M[2,0,5,b,2] + 1440000000*M[3,0,5,a,0] + 1440000000*M[3,0,5,a,1] + 1440000000*M[3,0,5,a,2] + 1440000000*M[3,0,5,b,0] + 1440000000*M[3,0,5,b,1] + 1440000000*M[3,0,5,b,2] + 1440000000*M[4,0,5,a,0] + 1440000000*M[4,0,5,a,1] + 1440000000*M[4,0,5,a,2] + 1440000000*M[4,0,5,b,0] + 1440000000*M[4,0,5,b,1] + 1440000000*M[4,0,5,b,2] + 1440000000*M[5,0,5,a,0] + 1440000000*M[5,0,5,a,1] + 1440000000*M[5,0,5,a,2] + 1440000000*M[5,0,5,b,0] + 1440000000*M[5,0,5,b,1] + 1440000000*M[5,0,5,b,2]) :   0.0 :   True
+        (1, 1) :  -Inf : 88128000000*Y[1,1] - (1440000000*M[1,1,1,a,0] + 1440000000*M[1,1,1,a,1] + 1440000000*M[1,1,1,a,2] + 1440000000*M[1,1,1,b,0] + 1440000000*M[1,1,1,b,1] + 1440000000*M[1,1,1,b,2] + 1440000000*M[2,1,1,a,0] + 1440000000*M[2,1,1,a,1] + 1440000000*M[2,1,1,a,2] + 1440000000*M[2,1,1,b,0] + 1440000000*M[2,1,1,b,1] + 1440000000*M[2,1,1,b,2] + 1440000000*M[3,1,1,a,0] + 1440000000*M[3,1,1,a,1] + 1440000000*M[3,1,1,a,2] + 1440000000*M[3,1,1,b,0] + 1440000000*M[3,1,1,b,1] + 1440000000*M[3,1,1,b,2] + 1440000000*M[4,1,1,a,0] + 1440000000*M[4,1,1,a,1] + 1440000000*M[4,1,1,a,2] + 1440000000*M[4,1,1,b,0] + 1440000000*M[4,1,1,b,1] + 1440000000*M[4,1,1,b,2] + 1440000000*M[5,1,1,a,0] + 1440000000*M[5,1,1,a,1] + 1440000000*M[5,1,1,a,2] + 1440000000*M[5,1,1,b,0] + 1440000000*M[5,1,1,b,1] + 1440000000*M[5,1,1,b,2]) :   0.0 :   True
+        (1, 2) :  -Inf : 88128000000*Y[1,2] - (1440000000*M[1,1,2,a,0] + 1440000000*M[1,1,2,a,1] + 1440000000*M[1,1,2,a,2] + 1440000000*M[1,1,2,b,0] + 1440000000*M[1,1,2,b,1] + 1440000000*M[1,1,2,b,2] + 1440000000*M[2,1,2,a,0] + 1440000000*M[2,1,2,a,1] + 1440000000*M[2,1,2,a,2] + 1440000000*M[2,1,2,b,0] + 1440000000*M[2,1,2,b,1] + 1440000000*M[2,1,2,b,2] + 1440000000*M[3,1,2,a,0] + 1440000000*M[3,1,2,a,1] + 1440000000*M[3,1,2,a,2] + 1440000000*M[3,1,2,b,0] + 1440000000*M[3,1,2,b,1] + 1440000000*M[3,1,2,b,2] + 1440000000*M[4,1,2,a,0] + 1440000000*M[4,1,2,a,1] + 1440000000*M[4,1,2,a,2] + 1440000000*M[4,1,2,b,0] + 1440000000*M[4,1,2,b,1] + 1440000000*M[4,1,2,b,2] + 1440000000*M[5,1,2,a,0] + 1440000000*M[5,1,2,a,1] + 1440000000*M[5,1,2,a,2] + 1440000000*M[5,1,2,b,0] + 1440000000*M[5,1,2,b,1] + 1440000000*M[5,1,2,b,2]) :   0.0 :   True
+        (1, 3) :  -Inf : 88128000000*Y[1,3] - (1440000000*M[1,1,3,a,0] + 1440000000*M[1,1,3,a,1] + 1440000000*M[1,1,3,a,2] + 1440000000*M[1,1,3,b,0] + 1440000000*M[1,1,3,b,1] + 1440000000*M[1,1,3,b,2] + 1440000000*M[2,1,3,a,0] + 1440000000*M[2,1,3,a,1] + 1440000000*M[2,1,3,a,2] + 1440000000*M[2,1,3,b,0] + 1440000000*M[2,1,3,b,1] + 1440000000*M[2,1,3,b,2] + 1440000000*M[3,1,3,a,0] + 1440000000*M[3,1,3,a,1] + 1440000000*M[3,1,3,a,2] + 1440000000*M[3,1,3,b,0] + 1440000000*M[3,1,3,b,1] + 1440000000*M[3,1,3,b,2] + 1440000000*M[4,1,3,a,0] + 1440000000*M[4,1,3,a,1] + 1440000000*M[4,1,3,a,2] + 1440000000*M[4,1,3,b,0] + 1440000000*M[4,1,3,b,1] + 1440000000*M[4,1,3,b,2] + 1440000000*M[5,1,3,a,0] + 1440000000*M[5,1,3,a,1] + 1440000000*M[5,1,3,a,2] + 1440000000*M[5,1,3,b,0] + 1440000000*M[5,1,3,b,1] + 1440000000*M[5,1,3,b,2]) :   0.0 :   True
+        (1, 4) :  -Inf : 88128000000*Y[1,4] - (1440000000*M[1,1,4,a,0] + 1440000000*M[1,1,4,a,1] + 1440000000*M[1,1,4,a,2] + 1440000000*M[1,1,4,b,0] + 1440000000*M[1,1,4,b,1] + 1440000000*M[1,1,4,b,2] + 1440000000*M[2,1,4,a,0] + 1440000000*M[2,1,4,a,1] + 1440000000*M[2,1,4,a,2] + 1440000000*M[2,1,4,b,0] + 1440000000*M[2,1,4,b,1] + 1440000000*M[2,1,4,b,2] + 1440000000*M[3,1,4,a,0] + 1440000000*M[3,1,4,a,1] + 1440000000*M[3,1,4,a,2] + 1440000000*M[3,1,4,b,0] + 1440000000*M[3,1,4,b,1] + 1440000000*M[3,1,4,b,2] + 1440000000*M[4,1,4,a,0] + 1440000000*M[4,1,4,a,1] + 1440000000*M[4,1,4,a,2] + 1440000000*M[4,1,4,b,0] + 1440000000*M[4,1,4,b,1] + 1440000000*M[4,1,4,b,2] + 1440000000*M[5,1,4,a,0] + 1440000000*M[5,1,4,a,1] + 1440000000*M[5,1,4,a,2] + 1440000000*M[5,1,4,b,0] + 1440000000*M[5,1,4,b,1] + 1440000000*M[5,1,4,b,2]) :   0.0 :   True
+        (1, 5) :  -Inf : 88128000000*Y[1,5] - (1440000000*M[1,1,5,a,0] + 1440000000*M[1,1,5,a,1] + 1440000000*M[1,1,5,a,2] + 1440000000*M[1,1,5,b,0] + 1440000000*M[1,1,5,b,1] + 1440000000*M[1,1,5,b,2] + 1440000000*M[2,1,5,a,0] + 1440000000*M[2,1,5,a,1] + 1440000000*M[2,1,5,a,2] + 1440000000*M[2,1,5,b,0] + 1440000000*M[2,1,5,b,1] + 1440000000*M[2,1,5,b,2] + 1440000000*M[3,1,5,a,0] + 1440000000*M[3,1,5,a,1] + 1440000000*M[3,1,5,a,2] + 1440000000*M[3,1,5,b,0] + 1440000000*M[3,1,5,b,1] + 1440000000*M[3,1,5,b,2] + 1440000000*M[4,1,5,a,0] + 1440000000*M[4,1,5,a,1] + 1440000000*M[4,1,5,a,2] + 1440000000*M[4,1,5,b,0] + 1440000000*M[4,1,5,b,1] + 1440000000*M[4,1,5,b,2] + 1440000000*M[5,1,5,a,0] + 1440000000*M[5,1,5,a,1] + 1440000000*M[5,1,5,a,2] + 1440000000*M[5,1,5,b,0] + 1440000000*M[5,1,5,b,1] + 1440000000*M[5,1,5,b,2]) :   0.0 :   True
+        (2, 1) :  -Inf : 88128000000*Y[2,1] - (1440000000*M[1,2,1,a,0] + 1440000000*M[1,2,1,a,1] + 1440000000*M[1,2,1,a,2] + 1440000000*M[1,2,1,b,0] + 1440000000*M[1,2,1,b,1] + 1440000000*M[1,2,1,b,2] + 1440000000*M[2,2,1,a,0] + 1440000000*M[2,2,1,a,1] + 1440000000*M[2,2,1,a,2] + 1440000000*M[2,2,1,b,0] + 1440000000*M[2,2,1,b,1] + 1440000000*M[2,2,1,b,2] + 1440000000*M[3,2,1,a,0] + 1440000000*M[3,2,1,a,1] + 1440000000*M[3,2,1,a,2] + 1440000000*M[3,2,1,b,0] + 1440000000*M[3,2,1,b,1] + 1440000000*M[3,2,1,b,2] + 1440000000*M[4,2,1,a,0] + 1440000000*M[4,2,1,a,1] + 1440000000*M[4,2,1,a,2] + 1440000000*M[4,2,1,b,0] + 1440000000*M[4,2,1,b,1] + 1440000000*M[4,2,1,b,2] + 1440000000*M[5,2,1,a,0] + 1440000000*M[5,2,1,a,1] + 1440000000*M[5,2,1,a,2] + 1440000000*M[5,2,1,b,0] + 1440000000*M[5,2,1,b,1] + 1440000000*M[5,2,1,b,2]) :   0.0 :   True
+        (2, 2) :  -Inf : 88128000000*Y[2,2] - (1440000000*M[1,2,2,a,0] + 1440000000*M[1,2,2,a,1] + 1440000000*M[1,2,2,a,2] + 1440000000*M[1,2,2,b,0] + 1440000000*M[1,2,2,b,1] + 1440000000*M[1,2,2,b,2] + 1440000000*M[2,2,2,a,0] + 1440000000*M[2,2,2,a,1] + 1440000000*M[2,2,2,a,2] + 1440000000*M[2,2,2,b,0] + 1440000000*M[2,2,2,b,1] + 1440000000*M[2,2,2,b,2] + 1440000000*M[3,2,2,a,0] + 1440000000*M[3,2,2,a,1] + 1440000000*M[3,2,2,a,2] + 1440000000*M[3,2,2,b,0] + 1440000000*M[3,2,2,b,1] + 1440000000*M[3,2,2,b,2] + 1440000000*M[4,2,2,a,0] + 1440000000*M[4,2,2,a,1] + 1440000000*M[4,2,2,a,2] + 1440000000*M[4,2,2,b,0] + 1440000000*M[4,2,2,b,1] + 1440000000*M[4,2,2,b,2] + 1440000000*M[5,2,2,a,0] + 1440000000*M[5,2,2,a,1] + 1440000000*M[5,2,2,a,2] + 1440000000*M[5,2,2,b,0] + 1440000000*M[5,2,2,b,1] + 1440000000*M[5,2,2,b,2]) :   0.0 :   True
+        (2, 3) :  -Inf : 88128000000*Y[2,3] - (1440000000*M[1,2,3,a,0] + 1440000000*M[1,2,3,a,1] + 1440000000*M[1,2,3,a,2] + 1440000000*M[1,2,3,b,0] + 1440000000*M[1,2,3,b,1] + 1440000000*M[1,2,3,b,2] + 1440000000*M[2,2,3,a,0] + 1440000000*M[2,2,3,a,1] + 1440000000*M[2,2,3,a,2] + 1440000000*M[2,2,3,b,0] + 1440000000*M[2,2,3,b,1] + 1440000000*M[2,2,3,b,2] + 1440000000*M[3,2,3,a,0] + 1440000000*M[3,2,3,a,1] + 1440000000*M[3,2,3,a,2] + 1440000000*M[3,2,3,b,0] + 1440000000*M[3,2,3,b,1] + 1440000000*M[3,2,3,b,2] + 1440000000*M[4,2,3,a,0] + 1440000000*M[4,2,3,a,1] + 1440000000*M[4,2,3,a,2] + 1440000000*M[4,2,3,b,0] + 1440000000*M[4,2,3,b,1] + 1440000000*M[4,2,3,b,2] + 1440000000*M[5,2,3,a,0] + 1440000000*M[5,2,3,a,1] + 1440000000*M[5,2,3,a,2] + 1440000000*M[5,2,3,b,0] + 1440000000*M[5,2,3,b,1] + 1440000000*M[5,2,3,b,2]) :   0.0 :   True
+        (2, 4) :  -Inf : 88128000000*Y[2,4] - (1440000000*M[1,2,4,a,0] + 1440000000*M[1,2,4,a,1] + 1440000000*M[1,2,4,a,2] + 1440000000*M[1,2,4,b,0] + 1440000000*M[1,2,4,b,1] + 1440000000*M[1,2,4,b,2] + 1440000000*M[2,2,4,a,0] + 1440000000*M[2,2,4,a,1] + 1440000000*M[2,2,4,a,2] + 1440000000*M[2,2,4,b,0] + 1440000000*M[2,2,4,b,1] + 1440000000*M[2,2,4,b,2] + 1440000000*M[3,2,4,a,0] + 1440000000*M[3,2,4,a,1] + 1440000000*M[3,2,4,a,2] + 1440000000*M[3,2,4,b,0] + 1440000000*M[3,2,4,b,1] + 1440000000*M[3,2,4,b,2] + 1440000000*M[4,2,4,a,0] + 1440000000*M[4,2,4,a,1] + 1440000000*M[4,2,4,a,2] + 1440000000*M[4,2,4,b,0] + 1440000000*M[4,2,4,b,1] + 1440000000*M[4,2,4,b,2] + 1440000000*M[5,2,4,a,0] + 1440000000*M[5,2,4,a,1] + 1440000000*M[5,2,4,a,2] + 1440000000*M[5,2,4,b,0] + 1440000000*M[5,2,4,b,1] + 1440000000*M[5,2,4,b,2]) :   0.0 :   True
+        (2, 5) :  -Inf : 88128000000*Y[2,5] - (1440000000*M[1,2,5,a,0] + 1440000000*M[1,2,5,a,1] + 1440000000*M[1,2,5,a,2] + 1440000000*M[1,2,5,b,0] + 1440000000*M[1,2,5,b,1] + 1440000000*M[1,2,5,b,2] + 1440000000*M[2,2,5,a,0] + 1440000000*M[2,2,5,a,1] + 1440000000*M[2,2,5,a,2] + 1440000000*M[2,2,5,b,0] + 1440000000*M[2,2,5,b,1] + 1440000000*M[2,2,5,b,2] + 1440000000*M[3,2,5,a,0] + 1440000000*M[3,2,5,a,1] + 1440000000*M[3,2,5,a,2] + 1440000000*M[3,2,5,b,0] + 1440000000*M[3,2,5,b,1] + 1440000000*M[3,2,5,b,2] + 1440000000*M[4,2,5,a,0] + 1440000000*M[4,2,5,a,1] + 1440000000*M[4,2,5,a,2] + 1440000000*M[4,2,5,b,0] + 1440000000*M[4,2,5,b,1] + 1440000000*M[4,2,5,b,2] + 1440000000*M[5,2,5,a,0] + 1440000000*M[5,2,5,a,1] + 1440000000*M[5,2,5,a,2] + 1440000000*M[5,2,5,b,0] + 1440000000*M[5,2,5,b,1] + 1440000000*M[5,2,5,b,2]) :   0.0 :   True
+
+49 Declarations: I T F B K W L u_index u D_index D CosteStock stockInicial SC Q_index Q M_index M vI_index vI V_index V Y_index Y X_index X I_rule_index I_rule I2_rule_index I2_rule Q_rule_index Q_rule M_rule_index M_rule V_rule_index V_rule Y_rule_index Y_rule X_rule_index X_rule X2_rule_index X2_rule X3_rule_index X3_rule Y2_rule_index Y2_rule X4_rule_index X4_rule objective

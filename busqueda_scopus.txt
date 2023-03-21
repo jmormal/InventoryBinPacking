@@ -1,0 +1,562 @@
+(TITLE-ABS-KEY("loading problem" OR "nesting problem" OR "knapsack problem") AND TITLE-ABS-KEY(inventory))
+
+
+
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning")
+ AND
+ TITLE-ABS-KEY("inventory" OR "production")
+ AND
+TITLE-ABS-KEY(transport* OR distribution)
+AND
+  TITLE-ABS-KEY("optimization" OR "optimisation")
+  AND TITLE-ABS-KEY(supply chain)
+
+
+
+
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply"))
+AND
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+     AND
+     (TITLE-ABS-KEY("routing" OR "truckload"))
+)
+AND
+    TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+    TITLE-ABS-KEY("tactical" OR "operational" OR "strategic")
+AND
+    TITLE-ABS-KEY(supply chain)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+(
+(TITLE-ABS-KEY(supply))
+AND
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+     AND
+     (TITLE-ABS-KEY("routing" OR "truckload"))
+)
+AND
+    TITLE-ABS-KEY(transport* or distribution or logistics)
+AND
+    TITLE-ABS-KEY(supply chain)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+) AND NOT (TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning"))
+
+
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning"))
+AND
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+)
+AND
+    TITLE-ABS-KEY(transport* or distribution or logistics)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+) AND TITLE-ABS-KEY(supply chain)
+
+
+
+(
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+     AND
+     (TITLE-ABS-KEY("truck*"OR "truckload" OR "milk*round" OR "milk*run"))
+)
+AND
+    TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+    ALL(supply chain)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" ))
+AND
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+     AND
+     (TITLE-ABS-KEY("routing" OR "truckload"))
+)
+AND
+    TITLE-ABS-KEY(distribut*)
+AND
+    ALL(supply chain)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning")
+AND
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+)
+AND
+    TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply"))
+AND
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+)
+AND
+    TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+    TITLE-ABS-KEY(supply chain)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply"))
+AND
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+)
+AND
+    TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+    TITLE-ABS-KEY(supply chain)
+AND
+    TITLE-ABS-KEY(routing)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply"))
+AND
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+     AND
+     (TITLE-ABS-KEY("routing" OR "truckload"))
+)
+AND
+    TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+    TITLE-ABS-KEY(supply chain)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply"))
+AND
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+     AND
+     (TITLE-ABS-KEY("routing" OR "truckload"))
+)
+AND
+    TITLE-ABS-KEY(transpor* OR distribut* OR logistics)
+AND
+    TITLE-ABS-KEY(supply chain)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+) AND NOT (TITLE-ABS-KEY(allocation)
+            OR
+            TITLE-ABS-KEY(Location))
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply"))
+AND
+(
+    ((TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") )
+        AND
+        TITLE-ABS-KEY("routing"))
+    AND
+    (TITLE-ABS-KEY("problem") )
+)
+AND
+    TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+    TITLE-ABS-KEY("routing")
+AND
+    TITLE-ABS-KEY(supply chain)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply"))
+AND
+(
+    (TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production") or TITLE-ABS-KEY("routing"))
+    AND
+    (TITLE-ABS-KEY("planning") OR TITLE-ABS-KEY("scheduling") OR TITLE-ABS-KEY("control") OR TITLE-ABS-KEY("problem") OR TITLE-ABS-KEY("management"))
+)
+AND
+    TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+    TITLE-ABS-KEY("routing")
+AND
+    TITLE-ABS-KEY(supply chain)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply"))
+AND
+(TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production"))
+AND
+    TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+    TITLE-ABS-KEY("routing")
+AND
+    TITLE-ABS-KEY(supply chain)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply")
+AND
+TITLE-ABS-KEY("inventory" OR "production")
+AND
+    TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+    TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply"))
+AND
+(TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production"))
+AND
+TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+TITLE-ABS-KEY("freight" or "*truck*")
+AND
+TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+
+
+(
+(TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply"))
+AND
+(TITLE-ABS-KEY("inventory") OR TITLE-ABS-KEY("production"))
+AND
+TITLE-ABS-KEY(transpor* OR distribut*)
+AND
+TITLE-ABS-KEY( "*truck*" OR "milk*round" OR "freight")
+AND
+TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+(
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply")
+)
+ AND
+(
+ TITLE-ABS-KEY("inventory")
+ OR
+ TITLE-ABS-KEY("production")
+)
+ AND
+ TITLE-ABS-KEY(transpor* OR distribut*)
+ AND
+ TITLE-ABS-KEY( "truck*" OR "milk-round" OR "milk round" OR "routing problem" OR "Loading problem")
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+
+
+
+(
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply")
+)
+ AND
+(
+ TITLE-ABS-KEY("inventory")
+ OR
+ TITLE-ABS-KEY("production")
+)
+ AND
+ TITLE-ABS-KEY(transpor* OR distribut*)
+ AND
+ TITLE-ABS-KEY( "truck*" OR "milk-round" OR "milk round" )
+ AND
+ TITLE-ABS-KEY("routing")
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+
+(
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply")
+)
+ AND
+(
+ TITLE-ABS-KEY("inventory")
+ OR
+ TITLE-ABS-KEY("production")
+)
+ AND
+ TITLE-ABS-KEY(transpor* OR distribut*)
+ AND
+ TITLE-ABS-KEY( "full truckload" OR "ftl" OR "Less than truckload" OR "Less-than-truckload" OR "milk round" OR
+ "milk-round" OR "vrp" OR "routing problem" OR "Loading problem" OR "truck")
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+
+(
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply")
+)
+ AND
+(
+ TITLE-ABS-KEY("inventory")
+ OR
+ TITLE-ABS-KEY("production")
+)
+ AND
+ TITLE-ABS-KEY(transpor* OR distribut*)
+ AND
+ TITLE-ABS-KEY( "full truckload" OR "ftl" OR "Less than truckload" OR "Less-than-truckload" OR "milk round" OR
+ "milk-round" OR "vrp" OR "routing problem" OR "Loading problem" )
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+(
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply")
+)
+ AND
+(
+ TITLE-ABS-KEY("inventory")
+ OR
+ TITLE-ABS-KEY("production")
+)
+ AND
+ (
+ TITLE-ABS-KEY(transpor* OR distrib*)
+ OR
+ TITLE-ABS-KEY("full truckload" OR "ftl" OR "Less than truckload" OR "Less-than-truckload" OR "milk round" OR
+ "milk-round" OR "vrp" OR "vehicle routing problem*" OR "routing problem" OR "Loading problem")
+ )
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+
+
+(
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply")
+)
+ AND
+(
+ TITLE-ABS-KEY("inventory")
+ OR
+ TITLE-ABS-KEY("production")
+)
+ AND
+ TITLE-ABS-KEY(transpor* OR distrib*)
+ AND
+ TITLE-ABS-KEY("full truckload" OR "ftl" OR "Less than truckload" OR "Less-than-truckload" OR "milk round" OR "milk-round" OR "vrp" OR "vehicle routing problem*" OR "routing problem" OR "Loading problem")
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+
+
+
+(
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR purchas* OR MRP OR "requirement planning" OR "supply")
+)
+ AND
+(
+ TITLE-ABS-KEY("inventory routing")
+ OR
+ TITLE-ABS-KEY("inventory-routing")
+ OR
+ TITLE-ABS-KEY("production routing")
+ OR
+ TITLE-ABS-KEY("production-routing")
+ OR
+ TITLE-ABS-KEY("production scheduling")
+ OR
+ TITLE-ABS-KEY("production-scheduling")
+ OR
+ TITLE-ABS-KEY("production planning")
+ OR
+ TITLE-ABS-KEY("production-planning")
+)
+ AND
+ TITLE-ABS-KEY(transpor* OR distrib*)
+ AND
+ TITLE-ABS-KEY("full truckload" OR "ftl" OR "Less than truckload" OR "Less-than-truckload" OR "milk round" OR "milk-round" OR "vrp" OR "vehicle routing problem*" OR "routing problem" OR "Loading problem")
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+
+
+(
+(
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR production)
+AND
+ TITLE-ABS-KEY(planning)
+)
+ OR
+ TITLE-ABS-KEY("inventory routing")
+OR
+ TITLE-ABS-KEY("inventory-routing")
+ OR
+ TITLE-ABS-KEY("production routing")
+ OR
+ TITLE-ABS-KEY("production-routing")
+)
+ AND
+ TITLE-ABS-KEY(transpor* OR distrib*)
+ AND
+ TITLE-ABS-KEY("full truckload" OR "ftl" OR "Less than truckload" OR "Less-than-truckload" OR "milk round" OR "milk-round" OR "vrp" OR "vehicle routing problem*" OR "routing problem" OR "Loading problem")
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+(
+(
+TITLE-ABS-KEY("inventory routing")
+OR
+TITLE-ABS-KEY("inventory-routing")
+OR
+TITLE-ABS-KEY("production routing")
+OR
+TITLE-ABS-KEY("production-routing")
+)
+ AND
+TITLE-ABS-KEY(transpor* OR distrib*)
+ AND
+TITLE-ABS-KEY("full truckload" OR "ftl" OR "Less than truckload" OR "Less-than-truckload" OR "milk round" OR "milk-round" OR "vrp" OR "vehicle routing problem*" OR "routing problem" OR "Loading problem")
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+(
+(
+TITLE-ABS-KEY("inventory routing")
+OR
+TITLE-ABS-KEY("inventory-routing")
+OR
+TITLE-ABS-KEY("production routing")
+OR
+TITLE-ABS-KEY("production-routing")
+)
+ AND
+TITLE-ABS-KEY(transpor* OR distrib*)
+ AND
+TITLE-ABS-KEY("full truckload" OR "ftl" OR "Less than truckload" OR "Less-than-truckload" OR "milk round" OR "milk-round" OR "routing problem" OR "Loading problem")
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+
+(
+(
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR production)
+AND
+TITLE-ABS-KEY(planning)
+)
+OR
+TITLE-ABS-KEY("inventory routing")
+OR
+TITLE-ABS-KEY("inventory-routing")
+OR
+TITLE-ABS-KEY("production routing")
+OR
+TITLE-ABS-KEY("production-routing")
+)
+ AND
+TITLE-ABS-KEY(transpor* OR distrib*)
+ AND
+ ALL("material requirement planning" OR mrp OR purchas* OR "JIT" OR "Just*in*time" OR eoq OR "Economic order quantity")
+
+TITLE-ABS-KEY("full truckload" OR "ftl" OR "Less than truckload" OR "Less-than-truckload" OR "milk round" OR "milk-round" OR "vrp" OR "vehicle routing problem*" OR "routing problem" OR "Loading problem")
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)
+
+
+
+
+(
+(
+(
+TITLE-ABS-KEY(provisioning OR replenishment OR procurement OR production)
+AND
+TITLE-ABS-KEY(planning)
+OR
+TITLE-ABS-KEY("inventory routing")
+)
+)
+ AND
+TITLE-ABS-KEY(transpor* OR distrib*)
+ AND
+TITLE-ABS-KEY("full truckload" OR "ftl" OR "Less than truckload" OR "Less-than-truckload" OR "milk round" OR
+"milk-round" OR "vrp" OR "vehicle routing problem*" OR "routing problem")
+ AND TITLE-ABS-KEY("optimization" OR "optimisation")
+)

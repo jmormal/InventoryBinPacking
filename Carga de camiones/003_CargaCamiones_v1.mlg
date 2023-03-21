@@ -1,0 +1,12 @@
+MACRO: 'UsoCamion'
+MACRO: 'CTransporte'
+MACRO: 'NumeroCamiones'
+OBJECTIVE: 'Z'
+CONSTRAINT: 'RStock' (15,1-15)
+CONSTRAINT: 'RStock' (165,16-180)
+CONSTRAINT: 'RCantidadPedir2' (8100,181-8280)
+CONSTRAINT: 'RCantidadPedir' (540,8281-8820)
+CONSTRAINT: 'RContenedores' (36,8821-8856)
+CONSTRAINT: 'RDimensionesCamion' (36,8857-8892)
+CONSTRAINT: 'RLlenado' (36,8893-8928)
+CONSTRAINT: 'RCoberturaStock' (180,8929-9108)
