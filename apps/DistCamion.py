@@ -6,8 +6,6 @@ from dash import  dash_table, dcc, html, Input, Output
 import pandas as pd
 import dash_bootstrap_components as dbc
 from app import app
-import drawing_truck as dt
-import datetime
 from drawing_truckv2 import  draw_truck
 
 path=os.getcwd()
@@ -38,18 +36,18 @@ layout = dbc.Container([
     dbc.Label("Número de filas que se muestran"),
 
     dcc.Dropdown(
-        id='days-dropdown', value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)][0],
+        id='days-dropdown', value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)][0],
         clearable=False,
         persistence=True, persistence_type='session',
         options=[{'label': x, 'value': x} for x in
-                 [d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)]]
+                 [d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)]]
     ),
     dcc.Dropdown(
-        id='proveedor-dropdown',  value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)][0],
+        id='proveedor-dropdown',  value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)][0],
         clearable=False,
         persistence=True, persistence_type='session',
         options=[{'label': x, 'value': x} for x in
-                 [d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)]]
+                 [d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)]]
     ),
 
     dcc.Dropdown(

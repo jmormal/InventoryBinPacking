@@ -21,18 +21,18 @@ if os.path.isdir(path+"\output\lastsol"):
         html.H1(children='Número de camiones utilizados por día')
         ,
         dcc.Dropdown(
-            id='days-dropdown', value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)][0],
+            id='days-dropdown', value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)][0],
             clearable=False,
             persistence=True, persistence_type='session',
             options=[{'label': x, 'value': x} for x in
-                     [d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)]]
+                     [d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)]]
         ),
         dcc.Dropdown(
-            id='proveedor-dropdown', value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)][0],
+            id='proveedor-dropdown', value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)][0],
             clearable=False,
             persistence=True, persistence_type='session',
             options=[{'label': x, 'value': x} for x in
-                     [d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)]]
+                     [d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)]]
         ),
 
         dcc.Graph(

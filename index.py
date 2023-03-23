@@ -1,33 +1,10 @@
-from dash import  dcc
-from dash import html
-from dash.dependencies import Input, Output
-import os
-import shutil
-# Connect to main app.py file
-from app import app
+
 import webbrowser
 from threading import Timer
-import time
-import sys
 import shutil
-import datetime
-from time import perf_counter as time
-import pandas as pd
-import os
-from dash import  dcc, html, Input, Output,  ctx
-from app import app
-
-import pandas as pd
-import os
-import plotly.express as px
-from dash import  dcc, html, Input, Output
-from app import app
-import pandas as pd
-import os
+from apps import Productos, Principal, Dias, Generar_solucion, DistCamion
 import os
 from dash import  dash_table, dcc, html, Input, Output
-import pandas as pd
-import dash_bootstrap_components as dbc
 from app import app
 path = os.getcwd()
 import datetime
@@ -57,7 +34,6 @@ else:
     pass
 
 # Connect to your app pages
-from apps import Productos, Principal, Dias, Generar_solución, DistCamion
 # Check if output/lastsol exists
 
 # Check if datasets exists
@@ -128,10 +104,10 @@ def display_page(pathname):
     except:
         return "404 Page Error! Please choose a link"
 
-port = 5000 # or simply open on the default `8050` port
+port = 8080 # or simply open on the default `8050` port
 
 def open_browser():
 	webbrowser.open_new("http://localhost:{}".format(port))
 if __name__ == '__main__':
     Timer(2, open_browser).start()
-    app.run_server(debug=False , port=port)
+    app.run_server( debug= False ,port=port)

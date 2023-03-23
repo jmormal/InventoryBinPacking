@@ -38,18 +38,18 @@ layout = dbc.Container([
     row_drop := dcc.Dropdown(value=10, clearable=False, style={'width':'35%'},
                              options=[10, 25, 50, 100]),
     dcc.Dropdown(
-        id='days-dropdown', value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)][0],
+        id='days-dropdown', value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)][0],
         clearable=False,
         persistence=True, persistence_type='session',
         options=[{'label': x, 'value': x} for x in
-                 [d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)]]
+                 [d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)]]
     ),
     dcc.Dropdown(
         id='proveedor-dropdown',
         clearable=False,
         persistence=True, persistence_type='session',
         # options=[{'label': x, 'value': x} for x in
-        #          [d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)]]
+        #          [d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)]]
     ),
     dbc.Row([
 html.Pre(children="Elija un día", style={"fontSize":"150%"}),

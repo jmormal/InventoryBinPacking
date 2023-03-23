@@ -1,4 +1,4 @@
-from Fabricas import Factory
+from Heuristica.Fabricas import Factory
 import time
 import rectpack as rp
 import datetime
@@ -121,7 +121,8 @@ class Solver():
                 F1.max_utilization = 0
                 for SortingAlgorithm in ListOfSortingAlgorithms:
                     for presort in PresortList[:1]:
-                        for _ in range(10000):
+                        F1.ListRectangles = []
+                        for _ in range(1000):
                             F1.SetTemporaryProyectedStockWithoutTransport()
                             F1.SetBottomDistribution(SortingAlgorithm=SortingAlgorithm, PreSort=presort,)
                             if F1.TotalUtilization ==1:

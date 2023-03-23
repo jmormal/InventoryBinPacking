@@ -10,18 +10,20 @@ import dash_bootstrap_components as dbc
 
 
 path=os.getcwd()
-
-
+print(path, os.listdir(r"output") ,flush=True)
+print( os.listdir() ,flush=True)
+print([ d for d in os.listdir(r"output") ] ,flush=True)
+print([ "output"+"/"+d for d in os.listdir(r"output") ] ,flush=True)
 layout = dbc.Container([
     html.H1(children='Elija un producto'),
     html.Pre(children="Producto ", style={"fontSize":"150%"}),
     dcc.Dropdown(
-            id='days-dropdown', value=[ d for d in os.listdir(r"output") if os.path.isdir("output"+"\\"+d)][0], clearable=False,
+            id='days-dropdown', value=[ d for d in os.listdir(r"output") if os.path.isdir("output"+"/"+d)][0], clearable=False,
             persistence=True, persistence_type='session',
-            options=[{'label': x, 'value': x} for x in  [ d for d in os.listdir(r"output") if os.path.isdir("output"+"\\"+d)]]
+            options=[{'label': x, 'value': x} for x in  [ d for d in os.listdir(r"output") if os.path.isdir("output"+"/"+d)]]
         ),
     dcc.Dropdown(
-        id='proveedor-dropdown', value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "\\" + d)][0],
+        id='proveedor-dropdown', value=[d for d in os.listdir(r"output") if os.path.isdir("output" + "/" + d)][0],
         clearable=False,
         persistence=True, persistence_type='session'
     ),
@@ -121,6 +123,6 @@ def update_solution(n_clicks,proveedor_chosen,day_chosen):
 def update_solution(name):
     # path = os.getcwd()
     # df_stock = pd.read_csv(path + "/output/lastsol/Stock.csv")
-    options= [d for d in os.listdir(r"output"+"\\"+name) if os.path.isdir("output" + "\\"+name+"\\" + d)]
+    options= [d for d in os.listdir(r"output"+"/"+name) if os.path.isdir("output" + "/"+name+"/" + d)]
     value = options[0]
     return options, value
