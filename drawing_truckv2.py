@@ -21,10 +21,11 @@ class Container():
         self.Height = Height
         self.Volume = self.Length*self.Width*self.Height
 def draw_truck(path, dff):
-    pd_productos = pd.read_csv(path + "\Productos.csv")
-    pd_demanda = pd.read_csv(path + "\Demanda.csv")
-    pd_dimensiones_camiones = pd.read_csv(path + "\Dimensiones_Camiones.csv")
-    pd_dimensiones_contenedores = pd.read_csv(path + "\Dimensiones_Contenedores.csv")
+    print(path + "\Productos.csv")
+    pd_productos = pd.read_csv(path + "/Productos.csv")
+    pd_demanda = pd.read_csv(path + "/Demanda.csv")
+    pd_dimensiones_camiones = pd.read_csv(path + "/Dimensiones_Camiones.csv")
+    pd_dimensiones_contenedores = pd.read_csv(path + "/Dimensiones_Contenedores.csv")
 
     # Create a dictionary of containers
     B = {}
