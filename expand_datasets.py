@@ -14,7 +14,7 @@ import shutil
 # First we are going to reduce the number of days in the dataset
 folders = os.listdir('datasets')
 
-for t in [2,5,7]:
+for t in [4,6,8]:
     # Get the folders in the dataset
     # For each folder in the dataset
     for folder in folders:

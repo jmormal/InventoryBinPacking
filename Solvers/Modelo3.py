@@ -114,7 +114,7 @@ class Solver():
         K_name = []
         i=0
         for row in pd_dimensiones_camiones.itertuples():
-            for _ in range(10):
+            for _ in range(5):
                 K.update({ i :Truck(row.id,row.Length,row.Width,row.Heigth) })
                 K_name.append(i)
                 i += 1
@@ -527,7 +527,7 @@ class Solver():
         model.objective = pe.Objective(expr=expr, sense=pe.minimize, doc="Función objetivo")
 
         solver = po.SolverFactory("gurobi")
-        times = 60 * 10
+        times = 60*60*2
         solver.options["TimeLimit"] = times
         solver.options['slog'] = 1
         solver.options['MIPFocus'] = 1
@@ -535,7 +535,7 @@ class Solver():
         print("\n The instance is planning days {} and folder  {} \n".format(planning_days, folder),
               file=open("results_modelo2_G.txt", "a"))
         try:
-            results = solver.solve(model, tee=True, logfile=path_save + "\logfile.log", )
+            results = solver.solve(model, tee=True, logfile=path_save + "\logfileModelo3.log", )
 
             # print to file the objective value, the status of the solution, and the gap
             print("Objective value: ", model.objective(), file=open("results_modelo2_G.txt", "a"))
@@ -543,21 +543,21 @@ class Solver():
             print("Gap: ", results.solver.termination_condition, file=open("results_modelo2_G.txt", "a"))
             print("Time: ", results.solver.time, file=open("results_modelo2_G.txt", "a"))
         except:
-            print("No solution found", file=open("results_modelo2_G.txt", "a"))
-            print("Time: " + str(times), file=open("results_modelo2_G.txt", "a"))
+            print("No solution found", file=open("results_modelo3_G.txt", "a"))
+            print("Time: " + str(times), file=open("results_modelo3_G.txt", "a"))
             return None
         original_stdout = sys.stdout # Save a reference to the original standard output
 
         print("Solucion guardada en: ", path_save)
         # Save the results
-        f = open(path_save + r'\resultados_modelo2_G.txt', 'w')
+        f = open(path_save + r'\resultados_modelo3_G.txt', 'w')
         sys.stdout = f
         model.pprint()
         f.close()
 
 
         # Save the results
-        f = open(path_save+r'\Globales_modelo2_G.txt', 'w')
+        f = open(path_save+r'\Globales_modelo3_G.txt', 'w')
         sys.stdout = f
         print("Status: ", results.solver.status)
         print("Gap: ", results.solver.termination_condition)

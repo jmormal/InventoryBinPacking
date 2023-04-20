@@ -552,7 +552,7 @@ class Solver():
         print("\n The instance is planning days {} and folder  {} \n".format(planning_days, folder),
               file=open("results_modelo4_G.txt", "a"))
         try:
-            results = solver.solve(model, tee=True, logfile=path_save + "\logfile.log", )
+            results = solver.solve(model, tee=True, logfile=path_save + "\logfileModelo4.log", )
 
             # print to file the objective value, the status of the solution, and the gap
             print("Objective value: ", model.objective(), file=open("results_modelo4_G.txt", "a"))
