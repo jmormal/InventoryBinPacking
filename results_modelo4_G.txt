@@ -1,0 +1,38 @@
+
+ The instance is planning days 10 and folder  Test1 
+
+Objective value:  15.0
+Status:  aborted
+Gap:  error
+Time:  591.6620419025421
+
+ The instance is planning days 10 and folder  Test2 
+
+
+ The instance is planning days 10 and folder  Test1 
+
+Objective value:  14.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  7201.250315904617
+
+ The instance is planning days 10 and folder  Test2 
+
+Objective value:  20.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  7201.610643863678
+
+ The instance is planning days 10 and folder  Test3 
+
+Objective value:  25.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  7201.609912872314
+
+ The instance is planning days 10 and folder  Test4 
+
+Objective value:  34.0
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  7201.646007061005

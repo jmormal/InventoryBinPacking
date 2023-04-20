@@ -122,7 +122,7 @@ class Solver():
                 for SortingAlgorithm in ListOfSortingAlgorithms:
                     for presort in PresortList[:1]:
                         F1.ListRectangles = []
-                        for _ in range(1000):
+                        for _ in range(1000*3):
                             F1.SetTemporaryProyectedStockWithoutTransport()
                             F1.SetBottomDistribution(SortingAlgorithm=SortingAlgorithm, PreSort=presort,)
                             if F1.TotalUtilization ==1:
@@ -148,6 +148,7 @@ class Solver():
         print(F1.Products[0].Name)
         print(time.time()-a)
         print(len(F1.AllTrucks))
+        print(path_save)
         F1.SaveResults(path_save)
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

@@ -1,0 +1,11 @@
+id,i,id_container,items_per_container,Stock,Days_Stock_Coverage,name_of_product,CosteStock
+1,1,a,30,1882,3,Front Seat Back Structure LH,1
+2,2,c,30,1881,3,Front Seat Back Structure RH,1
+3,3,a,15,1133,3,Front Seat Cushion LH - 4Way,1
+4,4,c,15,748,3,Front Seat CushionRH - 4Way,1
+5,5,b,12,434,3,Front Seat Cushion LH - 2Way,1
+6,6,d,12,703,3,Front Seat Cushion RH - 2Way,1
+7,7,d,16,313,3,Front Seat Cushion LH - 4Way Passenger ,1
+8,8,a,14,429,3,Front Seat Cushion RH - 4Way Passenger ,1
+9,9,c,12,89,3,Track and Cushion Asy - LH - 6W man,1
+10,10,a,15,89,3,Track and Cushion Asy - RH - 6W man,1

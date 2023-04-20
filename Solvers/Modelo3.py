@@ -86,7 +86,7 @@ class Solver():
 
 
         # \textit{I}       & Conjunto de contenedores (\textit{i} =1, 2,…,\textit{I})
-        I=list(range(1,16))
+        I=list(range(1,30))
         model.I=pe.Set(initialize=I, doc="Set of containers (i =1, 2,…,I)")
 
         N={i:i for i in pd_productos["i"].unique().tolist()}
@@ -114,7 +114,7 @@ class Solver():
         K_name = []
         i=0
         for row in pd_dimensiones_camiones.itertuples():
-            for _ in range(3):
+            for _ in range(10):
                 K.update({ i :Truck(row.id,row.Length,row.Width,row.Heigth) })
                 K_name.append(i)
                 i += 1

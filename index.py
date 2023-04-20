@@ -87,7 +87,7 @@ html.Div(
 def display_page(pathname):
     try:
         if pathname == '/apps/GSolucion':
-            return Generar_solución.layout
+            return Generar_solucion.layout
         elif pathname == '/apps/Iproductos':
             return Productos.layout
         elif pathname == '/apps/Idias':

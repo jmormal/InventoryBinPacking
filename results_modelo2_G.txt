@@ -1,0 +1,32 @@
+
+ The instance is planning days 10 and folder  Test1 
+
+No solution found
+Time: 600
+
+ The instance is planning days 10 and folder  Test2 
+
+
+ The instance is planning days 10 and folder  Test1 
+
+No solution found
+Time: 600
+
+ The instance is planning days 10 and folder  Test2 
+
+
+ The instance is planning days 10 and folder  Test1 
+
+
+ The instance is planning days 10 and folder  Test1 
+
+No solution found
+Time: 600
+
+ The instance is planning days 10 and folder  Test1 
+
+No solution found
+Time: 600
+
+ The instance is planning days 10 and folder  Test2 
+

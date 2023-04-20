@@ -1,0 +1,6 @@
+Status:  aborted
+Gap:  maxTimeLimit
+Time:  121.00959300994873
+Objective:  142699.76666666666
+Numero de camiones:  14.0
+ Coste stock:  61368.0
